@@ -1,11 +1,12 @@
-SRCS=$(wildcard *.hs)
-LIBS=$(wildcard Euler\*.hs)
+SRCS=$(wildcard src/*.hs)
+LIBS=$(wildcard src/Euler/*.hs)
 PROGS=$(patsubst %.hs,%,$(SRCS))
+COMPILE_TIMES=dist/compile.dat
 all: $(PROGS)
 
 %: %.hs $(LIBS)
-	echo -n "$*.hs\t" >> compile.dat
-	/usr/bin/time --format=%e ghc -O2 --make $*.hs 2>> compile.dat
+	echo -n "$*.hs\t" >> $(COMPILE_TIMES)
+	/usr/bin/time --format=%e ghc -outputdirdist -isrc/ -O2 --make $*.hs 2>> $(COMPILE_TIMES)
 
 test: euler.png
 
@@ -16,4 +17,4 @@ euler.png: times.dat
 	octave process.m
 
 clean: 
-	rm $(PROGS) *.hi *.o *.dat Euler/*.hi Euler/*.o
+	rm -rf $(PROGS) dist/*
