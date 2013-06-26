@@ -1,9 +1,11 @@
 SRCS=$(wildcard src/*.hs)
+BENCH_SRCS=$(wildcard testsuite/benches/*.hs)
+BENCH_PROGS=$(patsubst %.hs,%,$(BENCH_SRCS))
 LIBS=$(wildcard src/Euler/*.hs)
 PROGS=$(patsubst %.hs,%,$(SRCS))
 COMPILE_TIMES=dist/compile.dat
 HC=ghc
-HC_OPTS=-O2 -isrc/ --make
+HC_OPTS=-O3 -isrc/ --make
 
 all: $(PROGS)
 
@@ -13,15 +15,18 @@ all: $(PROGS)
 
 check: euler.png
 
+bench: $(BENCH_PROGS)
+
 dist/times.dat: $(PROGS)
 	util/EulerValues.py --answers util/answers.js --file dist/times.dat $(PROGS)
 
-euler.png: dist/times.dat
+euler.png: dist/times.dat $(BENCH_PROGS)
+	testsuite/benches/prime > dist/bench.dat
 	octave util/process.m
 
 clean: 
-	rm -rf $(PROGS) dist/*
-	find src -name *.o -exec rm -rf {} \;
-	find src -name *.hi -exec rm -rf {} \;
+	rm -rf $(PROGS) $(BENCH_PROGS) dist/*
+	find . -name *.o -exec rm -rf {} \;
+	find . -name *.hi -exec rm -rf {} \;
 
 
