@@ -17,7 +17,7 @@ dist/times.dat: $(PROGS)
 	util/EulerValues.py --answers util/answers.js --file dist/times.dat $(PROGS)
 
 euler.png: dist/times.dat
-	octave process.m
+	octave util/process.m
 
 clean: 
 	rm -rf $(PROGS) dist/*

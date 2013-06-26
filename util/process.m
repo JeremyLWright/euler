@@ -1,5 +1,5 @@
-[compile_names, compile_times] = textread('compile.dat', '%s %f');
-[run_names, run_times] = textread('times.dat', '%s %f');
+[compile_names, compile_times] = textread('dist/compile.dat', '%s %f');
+[run_names, run_times] = textread('dist/times.dat', '%s %f');
 subplot(2,1,1)
 bar(run_times);
 colormap(summer (64))
