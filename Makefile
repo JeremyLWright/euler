@@ -1,5 +1,5 @@
 SRCS=$(wildcard src/*.hs)
-BENCH_SRCS=$(wildcard testsuite/benches/*.hs)
+BENCH_SRCS=$(wildcard testsuite/benchmarks/*.hs)
 BENCH_PROGS=$(patsubst %.hs,%,$(BENCH_SRCS))
 LIBS=$(wildcard src/Euler/*.hs)
 PROGS=$(patsubst %.hs,%,$(SRCS))
@@ -21,7 +21,7 @@ dist/times.dat: $(PROGS)
 	util/EulerValues.py --answers util/answers.js --file dist/times.dat $(PROGS)
 
 euler.png: dist/times.dat $(BENCH_PROGS)
-	testsuite/benches/prime > dist/bench.dat
+	testsuite/benchmarks/prime > dist/bench.dat
 	octave util/process.m
 
 clean: 

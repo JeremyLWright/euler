@@ -21,6 +21,6 @@ set(gca, 'xticklabel', "primes <1E6")
 set(gca, 'yscale', 'log');
 ylabel("Run Time (s)")
 xlabel("Benchmark")
-print -dpng euler.png;
+print -dpng dist/euler.png;
 
 
