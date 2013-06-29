@@ -10,8 +10,8 @@ HC_OPTS=-O3 -isrc/ --make
 all: $(PROGS)
 
 %: %.hs $(LIBS)
-	echo -n "$*.hs\t" >> $(COMPILE_TIMES)
-	/usr/bin/time --format=%e $(HC) $(HC_OPTS) $*.hs 2>> $(COMPILE_TIMES)
+	@echo -n "$*.hs\t" >> $(COMPILE_TIMES)
+	$(HC) $(HC_OPTS) $*.hs
 
 check: euler.png
 
