@@ -1,4 +1,5 @@
-module Euler.NumberTheory ( primeFactors, isPrime, primes, properdivisors, fib) where
+module Euler.NumberTheory (primes, primeFactors, properdivisors, fib) where
+import Euler.ONeillPrimes 
 import qualified Data.List as L
 
 sigma n =  [x | x <- [0..n], (gcd x n) == 1]
@@ -22,7 +23,7 @@ primeFactors n = factor n primes
 primesSlow = 2 : filter ((==1) . length . primeFactors) [3,5..]
 
 --Taken from paper: http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf
-primes = 2:([3..] `minus` composites)
+primesList = 2:([3..] `minus` composites)
     where
         composites = union [multiples p | p <- primes]
         multiples n = map (n*) [n..] 
