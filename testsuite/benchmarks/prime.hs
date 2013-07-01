@@ -1,4 +1,4 @@
-import Euler.NumberTheory
+import Euler.ONeillPrimes
 import Control.Exception
 import System.CPUTime
 import Text.Printf
@@ -13,7 +13,7 @@ time a = do
     v <- a
     end   <- getCPUTime
     let diff = (fromIntegral (end - start)) / (10^12)
-    printf "prime %0.3f\n" (diff :: Double)
+    printf "prime\t%0.3f\n" (diff :: Double)
     return v
 
 main = do

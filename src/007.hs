@@ -3,6 +3,7 @@
 --What is the 10 001st prime number?
 --Answer: 104743
 
+import Euler.ONeillPrimes
 import Euler.NumberTheory
 
 
