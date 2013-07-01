@@ -6,12 +6,15 @@ PROGS=$(patsubst %.hs,%,$(SRCS))
 COMPILE_TIMES=dist/compile.dat
 HC=ghc
 HC_OPTS=-O3 -isrc/ --make
+GET_TIMESTAMP=$(shell date +%s.%N)
 
 all: $(PROGS)
 
 %: %.hs $(LIBS)
-	echo -n "$*.hs\t" >> $(COMPILE_TIMES)
-	/usr/bin/time --format=%e $(HC) $(HC_OPTS) $*.hs 2>> $(COMPILE_TIMES)
+	@echo -n "$*.hs\t" >> $(COMPILE_TIMES)
+	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	$(HC) $(HC_OPTS) $*.hs
+	@echo "$(GET_TIMESTAMP)" >> $(COMPILE_TIMES)
 
 check: euler.png
 

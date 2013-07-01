@@ -1,12 +1,12 @@
 --import Euler.NumberTheory
-import ONeillPrimes
+import Euler.ONeillPrimes
 import Control.Exception
 import System.CPUTime
 import Text.Printf
 import Control.Exception
 import System.CPUTime
 
-p = evaluate $ last $ takeWhile (<1000000000) primes
+p = evaluate $ last $ takeWhile (<1000000) primes
 
 time :: IO t -> IO t
 time a = do
