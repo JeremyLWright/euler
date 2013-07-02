@@ -3,7 +3,7 @@
 module Main where
 
 import NaiveSieveLimit (primesToNth)
-import System (getArgs)
+import System.Environment (getArgs)
 
 printNthPrime :: Int -> IO ()
 printNthPrime n = print (n, last(primesToNth n)) 

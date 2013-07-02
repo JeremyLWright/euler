@@ -1,4 +1,3 @@
---import Euler.NumberTheory
 import Euler.ONeillPrimes
 import Control.Exception
 import System.CPUTime

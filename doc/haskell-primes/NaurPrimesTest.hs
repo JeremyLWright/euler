@@ -3,7 +3,7 @@
 module Main where
 
 import NaurPrimes (primes)
-import System (getArgs)
+import System.Environment (getArgs)
 
 printNthPrime :: Int -> IO ()
 printNthPrime n = print (n, (primes !! (n - 1)) :: Integer) 

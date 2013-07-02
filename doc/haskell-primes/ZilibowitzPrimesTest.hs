@@ -3,7 +3,7 @@
 module Main where
 
 import ZilibowitzPrimes (primes)
-import System (getArgs)
+import System.Environment (getArgs)
 
 printNthPrime :: Int -> IO ()
 printNthPrime n = print (n, primes !! (n - 1)) 

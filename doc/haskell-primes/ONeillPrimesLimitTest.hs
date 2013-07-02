@@ -3,7 +3,7 @@
 module Main where
 
 import ONeillPrimes (primesToNth)
-import System (getArgs)
+import System.Environment (getArgs)
 
 --- The largest prime we can safely calculate with Int arithmetic is the
 --- 105,095,435th prime, which is 2,147,437,291 (prime closest to 

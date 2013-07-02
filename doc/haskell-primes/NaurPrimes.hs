@@ -4,8 +4,8 @@
 
 module NaurPrimes (primes, calcPrimes, primesToNth, primesToLimit) where
 
-import Array
-import List
+import Data.Array
+import Data.List
 
 -- Quick: All primes:
 
