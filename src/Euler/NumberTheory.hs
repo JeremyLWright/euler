@@ -1,4 +1,4 @@
-module Euler.NumberTheory (primes, primeFactors, properdivisors, fib) where
+module Euler.NumberTheory (isPrime, primes, primeFactors, properdivisors, fib) where
 import Euler.ONeillPrimes 
 import qualified Data.List as L
 
@@ -39,7 +39,11 @@ union = foldr merge []
                              | x > y = y:merge' (x:xs) ys
 -- End of primes function
 
-isPrime n = any (==n) $ takeWhile (<n) primes
+isPrime :: Integer -> Bool
+isPrime 1 = False
+isPrime n = case (primeFactors n) of
+                (_:_:_)   -> False
+                _         -> True
 
 properdivisors m = filter some [1..m `div` 2]
     where some n | m `mod` n == 0   = True
