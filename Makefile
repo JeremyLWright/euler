@@ -5,10 +5,10 @@ LIBS=$(wildcard src/Euler/*.hs)
 PROGS=$(patsubst %.hs,%,$(SRCS))
 COMPILE_TIMES=dist/compile.dat
 HC=ghc
-HC_OPTS=-O3 -isrc/ -package-db=dist/dependencies/packages-7.6.3.conf --make
+DEP_LIBS=dist/packages-7.6.3.conf
+HC_OPTS=-O3 -isrc/ -package-db=$(DEP_LIBS) --make
 GET_TIMESTAMP=$(shell date +%s.%N)
-CABAL=cabal-dev
-DEP_LIBS=dist/dependencies
+CABAL=$(HOME)/.cabal/bin/cabal-dev
 
 all: $(PROGS)
 
@@ -19,7 +19,7 @@ all: $(PROGS)
 	@echo "$(GET_TIMESTAMP)" >> $(COMPILE_TIMES)
 
 $(DEP_LIBS):
-	$(CABAL) install -s dist/dependencies digits
+	$(CABAL) install -s dist/ digits
 
 check: euler.png
 
