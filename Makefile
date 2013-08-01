@@ -12,7 +12,7 @@ CABAL=$(HOME)/.cabal/bin/cabal-dev
 
 .SUFFIXES: .o .hs .hi .lhs .hc .s
 
-all: $(PROGS)
+all: $(PROGS) .depend
 
 %: %.o $(LIBS) $(DEP_LIBS)
 	@echo -n "$*.hs\t" >> $(COMPILE_TIMES)
@@ -39,6 +39,9 @@ clean:
 	find . -name *.o -exec rm -rf {} \;
 	find . -name *.hi -exec rm -rf {} \;
 
+depend: .depend
+	@:
+
 #Standard Suffix Rules
 .o.hi: 
 	@:
@@ -49,7 +52,7 @@ clean:
 .hs.o:
 	$(HC) -c $< $(HC_OPTS)
 
-depend: $(SRCS) $(DEP_LIBS)
+.depend: $(SRCS) $(DEP_LIBS)
 	ghc -dep-makefile .depend -M $(HC_OPTS) $(SRCS)
 
 -include .depend
