@@ -1,6 +1,8 @@
 SRCS=$(wildcard src/*.hs)
 BENCH_SRCS=$(wildcard testsuite/benchmarks/*.hs)
 BENCH_PROGS=$(patsubst %.hs,%,$(BENCH_SRCS))
+TEST_SRCS=$(wildcard testsuite/tests/Euler/*.hs)
+TEST_PROGS=$(patsubst %.hs,%,$(TEST_SRCS))
 LIBS=$(wildcard src/Euler/*.hs)
 PROGS=$(patsubst %.hs,%,$(SRCS))
 COMPILE_TIMES=dist/compile.dat
@@ -11,6 +13,8 @@ GET_TIMESTAMP=$(shell date +%s.%N)
 CABAL=$(HOME)/.cabal/bin/cabal-dev
 
 .SUFFIXES: .o .hs .hi .lhs .hc .s
+
+.PHONY: all clean depend test
 
 all: $(PROGS) .depend
 
@@ -24,8 +28,13 @@ $(DEP_LIBS):
 	$(CABAL) install -s dist/ digits
 
 check: euler.png
+	@:
+
+test: $(TEST_PROGS)
+	$(foreach x,$(TEST_PROGS),./$(x)${\n})
 
 bench: $(BENCH_PROGS)
+	@:
 
 dist/times.dat: $(PROGS)
 	util/EulerValues.py --answers util/answers.js --file dist/times.dat $(PROGS)
@@ -39,9 +48,6 @@ clean:
 	find . -name *.o -exec rm -rf {} \;
 	find . -name *.hi -exec rm -rf {} \;
 
-depend: .depend
-	@:
-
 #Standard Suffix Rules
 .o.hi: 
 	@:
@@ -52,7 +58,7 @@ depend: .depend
 .hs.o:
 	$(HC) -c $< $(HC_OPTS)
 
-.depend: $(SRCS) $(DEP_LIBS)
+depend: $(SRCS) $(DEP_LIBS)
 	ghc -dep-makefile .depend -M $(HC_OPTS) $(SRCS)
 
 -include .depend
