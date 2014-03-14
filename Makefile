@@ -27,7 +27,7 @@ all: $(PROGS) .depend
 $(DEP_LIBS):
 	$(CABAL) install -s dist/ digits primes
 
-check: euler.png
+check: euler.pdf
 	@:
 
 test: $(TEST_PROGS)
@@ -39,7 +39,7 @@ bench: $(BENCH_PROGS)
 dist/times.dat: $(PROGS)
 	util/EulerValues.py --answers util/answers.js --file dist/times.dat $(PROGS)
 
-euler.png: dist/times.dat $(BENCH_PROGS)
+euler.pdf: dist/times.dat $(BENCH_PROGS)
 	testsuite/benchmarks/prime > dist/bench.dat
 	octave util/process.m
 
