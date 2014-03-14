@@ -1,4 +1,5 @@
----Using the fact that only prime digits can appear on the leftmost or rightmost--and only odd digits (minus 5) can appear in the middle.
+---Using the fact that only prime digits can appear on the leftmost or rightmost
+--and only odd digits (minus 5) can appear in the middle.
 
 import Data.Numbers.Primes (isPrime)
 import Control.Monad (liftM2)
