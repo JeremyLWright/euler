@@ -31,7 +31,10 @@ ylabel("Compile Time (s)");
 xlabel("Problem Number");
 
 subplot(3,3,5:6);
-hist(run_times);
+t = [nnz(run_times(run_times<=1)), nnz(run_times(run_times>1 & run_times <10)), nnz(run_times(run_times>=10))]
+bar(t)
+set(gca, 'XTick', [1 2 3])
+set(gca, 'xticklabel', "<= 1 sec |1 sec > t < 10 sec | > 10 sec")
 xlabel("Run Times (s)");
 
 
