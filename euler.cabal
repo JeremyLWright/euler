@@ -68,3 +68,13 @@ executable euler-039
   -- Base language which the package is written in.
   default-language:    Haskell2010
   
+Test-Suite test-problems
+    type:           exitcode-stdio-1.0
+    hs-source-dirs: testsuite, src
+    main-is:        TestRunner.hs
+    build-depends:  base,
+                    HUnit,
+                    QuickCheck,
+                    test-framework,
+                    test-framework-hunit,
+                    test-framework-quickcheck2
