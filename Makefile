@@ -25,7 +25,7 @@ all: $(PROGS) .depend
 	@echo "$(GET_TIMESTAMP)" >> $(COMPILE_TIMES)
 
 $(DEP_LIBS):
-	$(CABAL) install -s dist/ digits primes numbersieves
+	$(CABAL) install -s dist/ digits primes numbersieves exact-combinatorics
 
 check: euler.pdf
 	@:
