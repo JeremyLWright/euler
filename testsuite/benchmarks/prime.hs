@@ -1,4 +1,4 @@
-import Euler.ONeillPrimes
+import Math.Sieve.ONeill
 import Control.Exception
 import System.CPUTime
 import Text.Printf
