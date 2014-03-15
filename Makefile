@@ -41,7 +41,7 @@ dist/times.dat: $(PROGS)
 
 euler.pdf: dist/times.dat $(BENCH_PROGS)
 	testsuite/benchmarks/prime > dist/bench.dat
-	octave util/process.m
+	octave -q util/process.m
 
 clean: 
 	rm -rf $(PROGS) $(BENCH_PROGS) dist/* .depend
