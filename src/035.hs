@@ -1,6 +1,7 @@
 import Euler.Combinatorics
 import Euler.NumberTheory
 
+
 circular_primes :: [Integer] -> [Integer]
 circular_primes []     = []
 circular_primes (x:xs)
