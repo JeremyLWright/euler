@@ -13,9 +13,9 @@ main :: IO()
 main = defaultMain [
   testGroup "(Problems)" [
         testCase "Problem 001" (prob001 @=? 233168),
-        testCase "Problem 002" (prob001 @=? 4613732),
-        testCase "Problem 003" (prob001 @=? 6857),
-        testCase "Problem 004" (prob001 @=? 906609),
+        testCase "Problem 002" (prob002 @=? 4613732),
+        testCase "Problem 003" (prob003 @=? 6857),
+        testCase "Problem 004" (prob004 @=? 906609),
         testCase "Problem 005" (prob001 @=? 232792560),
         testCase "Problem 006" (prob001 @=? 25164150),
         testCase "Problem 007" (prob001 @=? 104743),

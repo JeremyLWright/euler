@@ -1,8 +1,48 @@
 module Euler.Problems
     (
         module Euler.Problems.P001,
+        module Euler.Problems.P002,
+        module Euler.Problems.P003,
+        module Euler.Problems.P004,
+        module Euler.Problems.P005,
+        module Euler.Problems.P006,
+        module Euler.Problems.P007,
+        module Euler.Problems.P008,
+        module Euler.Problems.P009,
+        module Euler.Problems.P010,
+        module Euler.Problems.P011,
+        module Euler.Problems.P012,
+        module Euler.Problems.P013,
+        module Euler.Problems.P014,
+        module Euler.Problems.P015,
+        module Euler.Problems.P016,
+        module Euler.Problems.P017,
+        module Euler.Problems.P018,
+        module Euler.Problems.P019,
+        module Euler.Problems.P020,
+        module Euler.Problems.P021,
         module Euler.Problems.P039
     ) where
 
 import Euler.Problems.P001
+import Euler.Problems.P002
+import Euler.Problems.P003
+import Euler.Problems.P004
+import Euler.Problems.P005
+import Euler.Problems.P006
+import Euler.Problems.P007
+import Euler.Problems.P008
+import Euler.Problems.P009
+import Euler.Problems.P010
+import Euler.Problems.P011
+import Euler.Problems.P012
+import Euler.Problems.P013
+import Euler.Problems.P014
+import Euler.Problems.P015
+import Euler.Problems.P016
+import Euler.Problems.P017
+import Euler.Problems.P018
+import Euler.Problems.P019
+import Euler.Problems.P020
+import Euler.Problems.P021
 import Euler.Problems.P039

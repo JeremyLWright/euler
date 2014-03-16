@@ -48,6 +48,168 @@ build-type:          Simple
 -- Constraint on the version of Cabal needed to build this package.
 cabal-version:       >=1.10
 
+library
+    build-depends:  base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3, array
+    Exposed-Modules: Euler.Problems
+    hs-source-dirs:  src
+    default-language: Haskell2010
+
+executable euler-001
+  main-is:  001.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  
+executable euler-002
+  main-is:  002.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-003
+  main-is:  003.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-004
+  main-is:  004.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-005
+  main-is:  005.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-006
+  main-is:  006.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-007
+  main-is:  007.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-008
+  main-is:  008.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-009
+  main-is:  009.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-010
+  main-is:  010.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-011
+  main-is:  011.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3, array, haskell2010
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-012
+  main-is:  012.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-013
+  main-is:  013.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-014
+  main-is:  014.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-015
+  main-is:  015.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-016
+  main-is:  016.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-017
+  main-is:  017.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-018
+  main-is:  018.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-019
+  main-is:  019.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-020
+  main-is:  020.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-021
+  main-is:  021.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-022
+  main-is:  022.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3, split
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-023
+  main-is:  023.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-024
+  main-is:  024.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-025
+  main-is:  026.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-026
+  main-is:  026.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-027
+  main-is:  027.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-028
+  main-is:  028.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-029
+  main-is:  029.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-030
+  main-is:  030.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+executable euler-031
+  main-is:  031.hs
+  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
 
 executable euler-039
   -- .hs or .lhs file containing the Main module.
