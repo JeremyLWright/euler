@@ -4,7 +4,7 @@ import Data.Char
 
 isPalindrome s = s == reverse s
 
-intToList n = (map (digitToInt)) $ show n
+intToList n = map digitToInt $ show n
 
 convertBase :: Integral a => a -> a -> [a] -> [a]
 convertBase from to = digits to . unDigits from

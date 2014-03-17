@@ -10,8 +10,8 @@ import Data.List
 names n = sort $ map (filter (/='"')) (splitOn "," n)
 
 letterValues = makeValues ('A', 1)
-                where   makeValues ('Z', n) = ('Z', n) : []
-                        makeValues (l, n) = (l, n) : makeValues ((succ l), (succ n))
+                where   makeValues ('Z', n) = [('Z', n)]
+                        makeValues (l, n) = (l, n) : makeValues (succ l, succ n)
 
 
 filterJusts [] = []
@@ -20,14 +20,14 @@ filterJusts (x:xs) = case x of
                         Nothing -> 0 : filterJusts xs
 
 wordValue w = sum .filterJusts . justValues $ w
-            where justValues w = map (\c -> lookup c letterValues) w
+            where justValues = map (`lookup` letterValues)
 
 nameIndex n ns = case elemIndex n ns of
                         Just x -> fromIntegral x + 1
                         Nothing -> 1
 
 --test case: nameScore "COLIN" s -> 49714
-nameScore ns n = (nameIndex n (nameList)) * (wordValue n)
+nameScore ns n = nameIndex n nameList * wordValue n
                 where nameList = names ns
 
 main = do 

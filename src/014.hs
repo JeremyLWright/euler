@@ -13,12 +13,12 @@
 --
 --NOTE: Once the chain starts the terms are allowed to go above one million.
 --
-collatz_step x  | even x = x `div` 2
+collatzStep x  | even x = x `div` 2
                 | odd x  = 3*x + 1
 
-collatz 1 = 1:[]
-collatz x = x:collatz (collatz_step x)
+collatz 1 = [1]
+collatz x = x:collatz (collatzStep x)
 
-collatz_pair x = (length (collatz x), x)
+collatzPair x = (length (collatz x), x)
 
-main = print (maximum (map collatz_pair [1000000,999999..1]))
+main = print (maximum (map collatzPair [1000000,999999..1]))

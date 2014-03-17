@@ -152,7 +152,7 @@ primesToLimit limit = takeWhile (< limit) (calcPrimes ())
 {-# SPECIALIZE sieve :: Integer -> [Integer] -> [Integer] #-}
 sieve :: Integral a => a -> [a] -> [a]
 sieve n [] = []
-sieve n wheel@(d:ds) = n : (map (\(p,wheel) -> p) primes1) where
+sieve n wheel@(d:ds) = n : map fst primes1 where
     primes1 = sieve' (n+d) ds initialTable 
     primes2 = sieve' (n+d) ds initialTable
     initialTable = initHQ (insertPQ (n*n) (n, wheel) emptyPQ)

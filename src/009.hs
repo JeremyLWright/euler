@@ -16,7 +16,7 @@ triplets l = [[a,b,c] | m <- [2..limit],
                         a+b+c==l]
     where limit = floor . sqrt . fromIntegral $ l
  
-problem_9 = product . head . triplets $ 1000
+prob009 = product . head . triplets $ 1000
 
-main = print problem_9
+main = print prob009
 

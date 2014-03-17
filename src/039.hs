@@ -3,7 +3,7 @@ import Data.List
 prims = group 
         $ sort [n*p | p <- ptrips, n <- [1..1000 `div` p]]
 counts = map length prims
-Just j = elemIndex (maximum counts) $ counts
+Just j = elemIndex (maximum counts) counts
 ptrips = [p | 
             n <- [1..floor(sqrt 1000)],
             m <- [n+1..floor(sqrt 1000)],

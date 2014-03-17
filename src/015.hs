@@ -3,4 +3,4 @@
 -- How many such routes are there through a 2020 grid?
 -- Answer: 137846528820
 
-main = print $ (product [21..40] `div` product [2..20])
+main = print  (product [21..40] `div` product [2..20])
