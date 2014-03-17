@@ -2,33 +2,30 @@
 compile_times = compile_times_e - compile_times_s;
 [run_names, run_times] = textread('dist/times.dat', '%s %f');
 [nothing, bench_time] = textread('dist/bench.dat', '%s %f');
-
+memory = load('dist/memory.dat');
 
 subplot(3,3,1);
-plot(run_times, '.');
-text(48,18,"Jeremy's Project Euler Progress")
-colormap(summer (64));
-ylabel("Run Time (s)");
-
-subplot(3,3,2);
-plot(run_times, '.');
-colormap(summer (64))
-set(gca, 'yscale', 'log');
-ylabel("Run Time (s)")
-
-subplot(3,3,3);
-plot(bench_time*1000, '.');
-set(gca, 'XTick', 1)
+stem(bench_time*1000);
+set(gca, 'XTick', 1);
 set(gca, 'xticklabel', "primes <1E6")
 ylabel("Run Time (ms)");
 xlabel("Benchmark");
 
+%hist(memory(:,2));
+%xlabel("Garbage Collection Cycles")
+
+subplot(3,3,2:3);
+bar(memory(:,1)/2^20);
+xlabel("Memory Usage");
+ylabel("Memory Usage (MB)");
+
 
 
 subplot(3,3,4);
-plot(compile_times*1000, '.');
-ylabel("Compile Time (ms)");
-xlabel("Problem Number");
+plot(run_times, '.');
+colormap(summer)
+set(gca, 'yscale', 'log');
+ylabel("Run Time (s)")
 
 subplot(3,3,5:6);
 t = [nnz(run_times(run_times<=1)), nnz(run_times(run_times>1 & run_times <10)), nnz(run_times(run_times>=10))];
@@ -39,15 +36,13 @@ xlabel("Run Times (s)");
 
 
 subplot(3,3,7);
-plot(compile_times, '.');
-set(gca, 'yscale', 'log');
-ylabel("Compile Time (s)");
+plot(compile_times*1000, '.');
+ylabel("Compile Time (ms)");
 xlabel("Problem Number");
 
 subplot(3,3,8:9);
 hist(compile_times*1000);
 xlabel("Compile Times (ms)");
-%set(gca, 'xscale', 'log');
 
 
 # equivalent to "orient tall" 

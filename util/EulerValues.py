@@ -16,15 +16,21 @@ def main():
 
     answers = json.load(open(args.answers, "r"))
     ftime = open(args.file, "w")
+    fmem = open("dist/memory.dat", "w")
 
     for prog in args.programs:
         p = os.path.basename(prog)
         wd = os.path.dirname(os.path.abspath(prog))
         a = answers[p]
+        
+        proc = subprocess.Popen(["./"+p, "+RTS", "-t"], cwd=wd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         start_time = time.time()
-        proc = subprocess.Popen("./"+p, cwd=wd, stdout=subprocess.PIPE)
         result = proc.stdout.read().strip()
         end_time = time.time() - start_time
+
+        memory = proc.stderr.read().strip()
+        fmem.write("{0}\t{1}\n".format(memory.split()[1], memory.split()[3]))
+
         if result == a:
             print "[{0}] Passed {1} seconds".format(p, end_time)
         else:
