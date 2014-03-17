@@ -29,7 +29,8 @@ def main():
         end_time = time.time() - start_time
 
         memory = proc.stderr.read().strip()
-        fmem.write("{0}\t{1}\n".format(memory.split()[1], memory.split()[3]))
+        usrmem = memory.split()[5].split('/')
+        fmem.write("{0}\t{1}\t{2}\t{3}\n".format(memory.split()[1], memory.split()[3], usrmem[0], usrmem[1]))
 
         if result == a:
             print "[{0}] Passed {1} seconds".format(p, end_time)

@@ -15,9 +15,8 @@ xlabel("Benchmark");
 %xlabel("Garbage Collection Cycles")
 
 subplot(3,3,2:3);
-bar(memory(:,1)/2^20);
-xlabel("Memory Usage");
-ylabel("Memory Usage (MB)");
+plot(log2(memory(:,4)), '.');
+ylabel("Memory Usage (log_2(bytes))");
 
 
 
