@@ -6,6 +6,7 @@ amicablePair n | n == d n = False
 
 d n = sum $ properdivisors n
 
+main :: IO()
 main = print (sum $ filter amicablePair [1..10000])
           
 

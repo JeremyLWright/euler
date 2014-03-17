@@ -11,6 +11,7 @@ nextMonth x y = (x + y) `mod` 7
 sunday = 0
 monday = 1
 
+main :: IO()
 main = print prob019
 --
 --fstOrder = [('1', "one")

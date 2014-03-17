@@ -24,4 +24,5 @@ recurringCycle d = remainders d 10 []
 
 prob026 = fst $ maximumBy (comparing snd) [(n , recurringCycle n) | n <- takeWhile (<1000) primes]
 
+main :: IO()
 main = print prob026

@@ -8,5 +8,6 @@ prob008 = do str <- readFile "Data/008.txt"
              let number = map digitToInt (concat $ lines str) --take the 
              print $ maximum $ map (product . take 5) (tails number)
 
+main :: IO()
 main = prob008
 

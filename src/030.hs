@@ -6,4 +6,5 @@ checkfifthSum n = powerSum == n
 fifthSums = filter checkfifthSum [2..limit]
     where limit = (sum . map (9^5*)) [1..5]
 
+main :: IO()
 main = print $ sum fifthSums

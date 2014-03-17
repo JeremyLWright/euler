@@ -30,6 +30,7 @@ nameIndex n ns = case elemIndex n ns of
 nameScore ns n = nameIndex n nameList * wordValue n
                 where nameList = names ns
 
+main :: IO()
 main = do 
         s <- readFile "Data/022.txt"
         let n = nameScore s

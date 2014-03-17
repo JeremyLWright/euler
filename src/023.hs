@@ -24,4 +24,5 @@ abundantSums = sum $ nub'  [x + y | x <- abundants, y <- abundants, (x+y) < sequ
 
 nonAbundantSums = sum [1..sequenceA048243Limit] - abundantSums 
 
+main :: IO()
 main = print  nonAbundantSums

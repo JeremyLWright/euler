@@ -41,5 +41,6 @@ prods a = [product xs | i <- range $ bounds a,
                         let is = take 4 $ iterate s i,
                         all (inArray a) is,
                         let xs = map (a!) is]
+main :: IO()
 main = print . maximum . prods . input =<< readFile "Data/011.txt"
 

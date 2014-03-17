@@ -21,4 +21,5 @@ collatz x = x:collatz (collatzStep x)
 
 collatzPair x = (length (collatz x), x)
 
+main :: IO()
 main = print (maximum (map collatzPair [1000000,999999..1]))

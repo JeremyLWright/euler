@@ -50,4 +50,5 @@ prob018 = head $ foldr1 g tri
         [04,62,98,27,23,09,70,98,73,93,38,53,60,04,23]]
 
 
+main :: IO()
 main = print prob018

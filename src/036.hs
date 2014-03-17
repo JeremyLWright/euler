@@ -17,5 +17,6 @@ prob36 = sum [x | x <- [1,3..1000000], binPal x, decPal x] -- even numbers requi
         binPal n = isPalindrome $ decToBin $ intToList n
         decPal n = isPalindrome $ intToList n
 
+main :: IO()
 main = print prob36
 

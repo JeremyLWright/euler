@@ -84,4 +84,5 @@ decompose x
  
 prob017 = length . concatMap decompose $ [1..1000]
 
+main :: IO()
 main = print  prob017

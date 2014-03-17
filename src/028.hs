@@ -6,5 +6,6 @@ fn s adder = adder s : snd s : third s : fourth s : fn (fourth s) (adder . (+2))
                   third  = snd    . adder
                   fourth = third  . adder
 
+main :: IO()
 main = print $ (sum . takeWhile (<=1001^2)) cornerSeq
 

@@ -13,4 +13,5 @@ circularPrimes (x:xs)
 prob035 :: Int
 prob035 = length $ circularPrimes $ takeWhile (<1000000) primes
 
+main :: IO()
 main = print prob035

@@ -7,4 +7,5 @@ import Euler.ONeillPrimes
 import Euler.NumberTheory
 
 
+main :: IO()
 main = print $ primes !! (10001-1)

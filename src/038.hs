@@ -13,4 +13,5 @@ prob038 :: Int
 prob038 = maximum . map read . filter ((['1'..'9'] ==) . sort) 
                $ [mult n 1 [] | n <- [2..9999]]
 
+main :: IO()
 main = print prob038

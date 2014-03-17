@@ -18,5 +18,6 @@ triplets l = [[a,b,c] | m <- [2..limit],
  
 prob009 = product . head . triplets $ 1000
 
+main :: IO()
 main = print prob009
 
