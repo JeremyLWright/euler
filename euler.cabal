@@ -102,12 +102,12 @@ executable euler-009
   default-language:    Haskell2010
 executable euler-010
   main-is:  010.hs
-  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3
+  build-depends:       containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3, haskell2010
   hs-source-dirs:      src
   default-language:    Haskell2010
 executable euler-011
   main-is:  011.hs
-  build-depends:       base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3, array, haskell2010
+  build-depends:       base, containers >=0.5 && <0.6, time >=1.4 && <1.5, parallel >=3.2 && <3.3, array
   hs-source-dirs:      src
   default-language:    Haskell2010
 executable euler-012
@@ -235,6 +235,7 @@ Test-Suite test-problems
     hs-source-dirs: testsuite, src
     main-is:        TestRunner.hs
     build-depends:  base,
+                    array,
                     HUnit,
                     QuickCheck,
                     test-framework,
