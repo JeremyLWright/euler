@@ -8,6 +8,7 @@ import Data.List (tails)
  
 prob008 = do str <- readFile "Data/008.txt"
              let number = map digitToInt (concat $ lines str) --take the 
-             print $ maximum $ map (product . take 5) (tails number)
+             let x = maximum $ map (product . take 5) (tails number)
+             return x
 
 

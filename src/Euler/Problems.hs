@@ -21,7 +21,26 @@ module Euler.Problems
         module Euler.Problems.P019,
         module Euler.Problems.P020,
         module Euler.Problems.P021,
-        module Euler.Problems.P039
+        module Euler.Problems.P022,
+        module Euler.Problems.P023,
+        module Euler.Problems.P024,
+        module Euler.Problems.P025,
+        module Euler.Problems.P026,
+        module Euler.Problems.P027,
+        module Euler.Problems.P028,
+        module Euler.Problems.P029,
+        module Euler.Problems.P030,
+        module Euler.Problems.P031,
+        module Euler.Problems.P032,
+        module Euler.Problems.P033,
+        module Euler.Problems.P034,
+        module Euler.Problems.P035,
+        module Euler.Problems.P036,
+        module Euler.Problems.P037,
+        module Euler.Problems.P038,
+        module Euler.Problems.P039,
+        module Euler.Problems.P046,
+        module Euler.Problems.P096
     ) where
 
 import Euler.Problems.P001
@@ -45,4 +64,23 @@ import Euler.Problems.P018
 import Euler.Problems.P019
 import Euler.Problems.P020
 import Euler.Problems.P021
+import Euler.Problems.P022
+import Euler.Problems.P023
+import Euler.Problems.P024
+import Euler.Problems.P025
+import Euler.Problems.P026
+import Euler.Problems.P027
+import Euler.Problems.P028
+import Euler.Problems.P029
+import Euler.Problems.P030
+import Euler.Problems.P031
+import Euler.Problems.P032
+import Euler.Problems.P033
+import Euler.Problems.P034
+import Euler.Problems.P035
+import Euler.Problems.P036
+import Euler.Problems.P037
+import Euler.Problems.P038
 import Euler.Problems.P039
+import Euler.Problems.P046
+import Euler.Problems.P096
