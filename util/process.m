@@ -3,7 +3,6 @@ compile_times = compile_times_e - compile_times_s;
 [run_names, run_times] = textread('dist/times.dat', '%s %f');
 [nothing, bench_time] = textread('dist/bench.dat', '%s %f');
 
-
 subplot(3,3,1);
 plot(run_times, '.');
 text(48,18,"Jeremy's Project Euler Progress")

@@ -1,4 +1,5 @@
-cabal-dev install --enable-benchmarks --enable-tests
-cabal-dev test
-cabal-dev bench --benchmark-option=-urpt
+cabal sandbox init
+cabal install --enable-benchmarks --enable-tests
+cabal test
+cabal bench --benchmark-option=-urpt -oreport.html
 

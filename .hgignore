@@ -1,5 +1,6 @@
 syntax: glob
 cabal-dev
+.cabal-sandbox
 .depend
 *.hi
 *.o

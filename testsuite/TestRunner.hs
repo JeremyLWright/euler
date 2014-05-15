@@ -50,7 +50,8 @@ main = defaultMain [
         testCase "Problem 036" (prob036 @=? 872187),
         testCase "Problem 037" (prob037 @=? 748317),
         testCase "Problem 038" (prob038 @=? 932718654),
-        testCase "Problem 039" (prob039 @=? 840)
+        testCase "Problem 039" (prob039 @=? 840),
+        testCase "Problem 040" (prob040 @=? 210)
         --testCase "Problem 046" (prob001 @=? "working..."),
         --testCase "Problem 096" (prob001 @=? "Hello")
      ]
