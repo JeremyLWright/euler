@@ -9,6 +9,8 @@ import Euler.Problems
 import Test.HUnit
 import Data.Char
 
+import Euler.NumberProperties
+
 main :: IO()
 main = defaultMain [
   testGroup "(Problems)" [
@@ -54,5 +56,11 @@ main = defaultMain [
         testCase "Problem 040" (prob040 @=? 210)
         --testCase "Problem 046" (prob001 @=? "working..."),
         --testCase "Problem 096" (prob001 @=? "Hello")
+     ],
+  testGroup "(NumberTheory)" [
+        testCase "pandigital 1" (True @=? isPandigital 1),
+        testCase "pandigital full" (True @=? isPandigital 123456789),
+
+        testCase "digs"         ([1,2,3] @=? digs 123)
      ]
   ]
