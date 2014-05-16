@@ -101,4 +101,5 @@ n = [37107287533902102798797998220837590246510135740250,
 
 problem13 = read (take 10 $ show $ sum n) :: Integer
 
+main :: IO()
 main = print problem13

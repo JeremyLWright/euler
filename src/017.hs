@@ -73,15 +73,16 @@ decompose x
     | x == 0                       = []
     | x < 20                       = one !! (x-1)
     | x >= 20 && x < 100           = 
-        ty !! (firstDigit (x) - 2) ++ decompose ( x - firstDigit (x) * 10)
+        ty !! (firstDigit x - 2) ++ decompose ( x - firstDigit x * 10)
     | x < 1000 && x `mod` 100 ==0  = 
-        one !! (firstDigit (x)-1) ++ "hundred"
+        one !! (firstDigit x-1) ++ "hundred"
     | x > 100 && x <= 999          = 
-        one !! (firstDigit (x)-1) ++ "hundredand" ++decompose ( x - firstDigit (x) * 100)
+        one !! (firstDigit x-1) ++ "hundredand" ++decompose ( x - firstDigit x * 100)
     | x == 1000                    = "onethousand"
  
   where firstDigit x = digitToInt . head . show $ x
  
-problem_17 = length . concatMap decompose $ [1..1000]
+prob017 = length . concatMap decompose $ [1..1000]
 
-main = print problem_17
+main :: IO()
+main = print  prob017

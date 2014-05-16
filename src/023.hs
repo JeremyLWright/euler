@@ -13,15 +13,16 @@ import Data.IntSet (toList, fromList)
 --
 
 --According to oeis.org/A048242, a(1456) - 20161 is the final term
-sequence_A048243_Limit = 20161
+sequenceA048243Limit = 20161
 
-isAbundant n = (sum $ properdivisors n) > n
-abundants = filter isAbundant [1..sequence_A048243_Limit]
+isAbundant n = sum (properdivisors n) > n
+abundants = filter isAbundant [1..sequenceA048243Limit]
 
-abundantSums = sum $ nub' $ [x + y | x <- abundants, y <- abundants, (x+y) < sequence_A048243_Limit]
+abundantSums = sum $ nub'  [x + y | x <- abundants, y <- abundants, (x+y) < sequenceA048243Limit]
                     where
                         nub' = toList . fromList
 
-nonAbundantSums = (sum [1..sequence_A048243_Limit]) - abundantSums 
+nonAbundantSums = sum [1..sequenceA048243Limit] - abundantSums 
 
-main = print $ nonAbundantSums
+main :: IO()
+main = print  nonAbundantSums

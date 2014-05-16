@@ -22,6 +22,7 @@ remainders d r rs = let r' = r `mod` d
 
 recurringCycle d = remainders d 10 []
 
-problem_26 = fst $ maximumBy (comparing snd) [(n , recurringCycle n) | n <- takeWhile (<1000) primes]
+prob026 = fst $ maximumBy (comparing snd) [(n , recurringCycle n) | n <- takeWhile (<1000) primes]
 
-main = print problem_26
+main :: IO()
+main = print prob026

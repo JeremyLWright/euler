@@ -28,7 +28,7 @@
 --NOTE: As there are only 16384 routes, it is possible to solve this problem by trying every route. However, Problem 67, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)
 
 
-problem_18 = head $ foldr1 g tri 
+prob018 = head $ foldr1 g tri 
   where
     f x y z = x + max y z
     g xs ys = zipWith3 f xs ys $ tail ys
@@ -50,4 +50,5 @@ problem_18 = head $ foldr1 g tri
         [04,62,98,27,23,09,70,98,73,93,38,53,60,04,23]]
 
 
-main = print problem_18
+main :: IO()
+main = print prob018

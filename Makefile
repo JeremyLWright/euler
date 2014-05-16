@@ -8,7 +8,7 @@ PROGS=$(patsubst %.hs,%,$(SRCS))
 COMPILE_TIMES=dist/compile.dat
 HC=ghc
 DEP_LIBS=dist/packages-7.6.3.conf
-HC_OPTS=-O3 -isrc/ -package-db=$(DEP_LIBS)
+HC_OPTS=-Wall -prof -O -isrc/ -package-db=$(DEP_LIBS)
 GET_TIMESTAMP=$(shell date +%s.%N)
 CABAL=$(HOME)/.cabal/bin/cabal-dev
 
@@ -25,7 +25,7 @@ all: $(PROGS) .depend
 	@echo "$(GET_TIMESTAMP)" >> $(COMPILE_TIMES)
 
 $(DEP_LIBS):
-	$(CABAL) install -s dist/ digits primes numbersieves exact-combinatorics
+	$(CABAL) install -p -s dist/ digits primes numbersieves exact-combinatorics
 
 check: euler.pdf
 	@:
@@ -60,5 +60,8 @@ clean:
 
 depend: $(SRCS) $(DEP_LIBS)
 	ghc -dep-makefile .depend -M $(HC_OPTS) $(SRCS)
+
+lint:
+	hlint src --report
 
 -include .depend

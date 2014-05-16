@@ -2,8 +2,8 @@ module Euler.NumberTheory (isPrime, primes, primeFactors, properdivisors, fib) w
 import Euler.ONeillPrimes 
 import qualified Data.List as L
 
-sigma n =  [x | x <- [0..n], (gcd x n) == 1]
-phi n = eulerTotient n
+sigma n =  [x | x <- [0..n], gcd x n == 1]
+phi  = eulerTotient
 eulerTotient n = length $ sigma n
 
 fib = (map fib [0..] !!)
@@ -41,7 +41,7 @@ union = foldr merge []
 
 isPrime :: Integer -> Bool
 isPrime 1 = False
-isPrime n = case (primeFactors n) of
+isPrime n = case primeFactors n of
                 (_:_:_)   -> False
                 _         -> True
 

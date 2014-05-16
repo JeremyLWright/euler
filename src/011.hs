@@ -31,9 +31,9 @@ import Data.Array
 input :: String -> Array (Int, Int) Int
 input = listArray ((1,1), (20,20)) . map read . words
 
-senses = [(+1) *** id,(+1) *** (+1), id *** (+1), (+1) *** (\n -> n - 1)]
+senses = [first (+1),(+1) *** (+1), second (+1), (+1) *** (\n -> n - 1)]
  
-inArray a i = inRange (bounds a) i
+inArray a = inRange (bounds a)
  
 prods :: Array (Int, Int) Int -> [Int]
 prods a = [product xs | i <- range $ bounds a,
@@ -41,5 +41,6 @@ prods a = [product xs | i <- range $ bounds a,
                         let is = take 4 $ iterate s i,
                         all (inArray a) is,
                         let xs = map (a!) is]
+main :: IO()
 main = print . maximum . prods . input =<< readFile "Data/011.txt"
 
