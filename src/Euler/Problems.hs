@@ -40,6 +40,7 @@ module Euler.Problems
         module Euler.Problems.P038,
         module Euler.Problems.P039,
         module Euler.Problems.P040,
+        module Euler.Problems.P041,
         module Euler.Problems.P046,
         module Euler.Problems.P096
     ) where
@@ -84,5 +85,6 @@ import Euler.Problems.P037
 import Euler.Problems.P038
 import Euler.Problems.P039
 import Euler.Problems.P040
+import Euler.Problems.P041
 import Euler.Problems.P046
 import Euler.Problems.P096

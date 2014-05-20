@@ -10,41 +10,84 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 library
-    build-depends:  base >=4.6 && <4.7, containers >=0.5 && <0.6, array >=0.4 && <0.5, time >=1.4 && <1.5, parallel >=3.2 && <3.3, array, QuickCheck, HUnit, primes, digits, split
-    Exposed-Modules: Euler.Problems, Euler.Combinatorics, Euler.NumberTheory, Euler.ONeillPrimes, Euler.NumberProperties
-    hs-source-dirs:  src
-    default-language: Haskell2010
-
-executable euler-001
-  main-is:  001.hs
-  build-depends:       base, euler, primes, digits, containers, split, array
-  hs-source-dirs:      src
-  default-language:    Haskell2010
-  
-
-executable euler-039
-  main-is:  039.hs
-  build-depends:       base, euler, primes, digits, containers, split, array
-  hs-source-dirs:      src
-  default-language:    Haskell2010
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    Exposed-Modules:    Euler.Problems, 
+                        Euler.Combinatorics, 
+                        Euler.NumberTheory, 
+                        Euler.ONeillPrimes, 
+                        Euler.NumberProperties
+    hs-source-dirs:     src
+    default-language:   Haskell2010
 
 Test-Suite test-problems
     type:           exitcode-stdio-1.0
     hs-source-dirs: testsuite, src
     main-is:        TestRunner.hs
     build-depends:  base,
-                    array,
+                    euler, 
                     HUnit,
                     QuickCheck,
+                    array,
+                    containers, 
+                    digits, 
+                    primes, 
+                    split, 
                     test-framework,
                     test-framework-hunit,
-                    test-framework-quickcheck2,
-                   euler, primes, digits, containers, split, array
+                    test-framework-quickcheck2
     default-language: Haskell2010
 
-benchmark bench-builder-all
+Test-Suite test-euler
+    type:           exitcode-stdio-1.0
+    hs-source-dirs: testsuite, src
+    main-is:        test-euler.hs
+    build-depends:  base,
+                    euler, 
+                    HUnit,
+                    QuickCheck,
+                    array,
+                    containers, 
+                    digits, 
+                    primes, 
+                    split, 
+                    test-framework,
+                    test-framework-hunit,
+                    test-framework-quickcheck2
+    default-language: Haskell2010
+
+benchmark bench-problems
     type:       exitcode-stdio-1.0
     hs-source-dirs: testsuite/benchmarks, src
     main-is:        problems.hs
-    build-depends:  base, criterion, euler, primes, digits, containers, split, array
+    build-depends:  base, 
+                    euler, 
+                    array,
+                    containers, 
+                    criterion, 
+                    digits, 
+                    primes, 
+                    split 
+    default-language: Haskell2010
+
+benchmark bench-euler
+    type:       exitcode-stdio-1.0
+    hs-source-dirs: testsuite/benchmarks, src
+    main-is:        prime.hs
+    build-depends:  base, 
+                    euler, 
+                    array,
+                    containers, 
+                    criterion, 
+                    digits, 
+                    primes, 
+                    split 
+    default-language: Haskell2010
 

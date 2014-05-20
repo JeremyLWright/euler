@@ -1,16 +1,11 @@
 import Criterion.Main
 import Euler.Problems
 
-fib :: Int -> Int
-fib 0 = 0
-fib 1 = 1
-fib n = fib (n-1) + fib (n-2)
-
 w f = f
 
 main = defaultMain [
        bgroup "Problems" [ 
-        bench "p001" $ whnf w prob001 
+       bench "p001" $ whnf w prob001 
         , bench "p002" $ whnf w prob002 
         , bench "p003" $ whnf w prob003 
         , bench "p004" $ whnf w prob004 
@@ -49,6 +44,10 @@ main = defaultMain [
         , bench "p037" $ whnf w prob037 
         , bench "p038" $ whnf w prob038 
         , bench "p039" $ whnf w prob039 
+        , bench "p040" $ whnf w prob040 
+        , bench "p041" $ whnf w prob041 
+        , bench "p046" $ whnf w prob046 
+        , bench "p096" $ whnf w prob096
 
         ]
        ]
