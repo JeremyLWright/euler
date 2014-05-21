@@ -16,5 +16,5 @@ prop_primes_are_odd (Prime p) | p == 2 = True
 
 --tests = [("prime_simple_trial_division"), test prop_primes_dont_divide]
 
---main = $(verboseCheckAll)
-main = $(quickCheckAll)
+main = $(verboseCheckAll)
+--main = $(quickCheckAll)

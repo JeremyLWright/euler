@@ -56,18 +56,5 @@ main = defaultMain [
         testCase "Problem 040" (prob040 @=? 210)
         --testCase "Problem 046" (prob001 @=? "working..."),
         --testCase "Problem 096" (prob001 @=? "Hello")
-     ],
-  testGroup "(NumberTheory)" [
-        testCase "pandigital 1" (True @=? isPandigital 1),
-        testCase "pandigital 12" (True @=? isPandigital 12),
-        testCase "pandigital 123" (True @=? isPandigital 123),
-        testCase "pandigital 1234" (True @=? isPandigital 1234),
-        testCase "pandigital 12345" (True @=? isPandigital 12345),
-        testCase "pandigital 123456" (True @=? isPandigital 123456),
-        testCase "pandigital 1234567" (True @=? isPandigital 1234567),
-        testCase "pandigital 12345678" (True @=? isPandigital 12345678),
-        testCase "pandigital 123456789" (True @=? isPandigital 123456789),
-
-        testCase "digs"         ([1,2,3] @=? digs 123)
      ]
   ]
