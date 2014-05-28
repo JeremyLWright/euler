@@ -26,3 +26,4 @@ main = defaultMain [
         testCase "digs"         ([1,2,3] @=? digs 123)
      ]
   ]
+  -- try this: permutations $ digs 123456789
