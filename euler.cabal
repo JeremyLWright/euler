@@ -63,23 +63,23 @@ Test-Suite test-euler
                     test-framework-quickcheck2
     default-language: Haskell2010
 
-Test-Suite test-quick
-    type:           exitcode-stdio-1.0
-    hs-source-dirs: testsuite/quick, src
-    main-is:        primes.hs
-    build-depends:  base,
-                    euler, 
-                    HUnit,
-                    QuickCheck,
-                    array,
-                    containers, 
-                    digits, 
-                    primes, 
-                    split, 
-                    test-framework,
-                    test-framework-hunit,
-                    test-framework-quickcheck2
-    default-language: Haskell2010
+--Test-Suite test-quick
+--    type:           exitcode-stdio-1.0
+--    hs-source-dirs: testsuite/quick, src
+--    main-is:        primes.hs
+--    build-depends:  base,
+--                    euler, 
+--                    HUnit,
+--                    QuickCheck,
+--                    array,
+--                    containers, 
+--                    digits, 
+--                    primes, 
+--                    split, 
+--                    test-framework,
+--                    test-framework-hunit,
+--                    test-framework-quickcheck2
+--    default-language: Haskell2010
 
 benchmark bench-problems
     type:       exitcode-stdio-1.0
