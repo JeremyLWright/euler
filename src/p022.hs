@@ -32,7 +32,7 @@ nameScore ns n = nameIndex n nameList * wordValue n
 
 main :: IO()
 main = do 
-        s <- readFile "Data/022.txt"
+        s <- readFile "src/Euler/Problems/Data/022.txt"
         let n = nameScore s
         print $ sum $ map n $ names s
 

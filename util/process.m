@@ -13,7 +13,7 @@ tests = [36,8];
 subplot(3,3,1);
 bar(tests);
 set(gca, 'XTick', [1,2]);
-set(gca, 'xticklabel', "Pass|Fail");
+set(gca, 'xticklabel', "Pass|Fail");    
 xlabel("Test Cases");
 
 subplot(3,3,2:3);
@@ -38,7 +38,7 @@ xlabel("Run Times (s)");
 
 subplot(3,3,7);
 plot(run_times, '.');
-colormap(summer (64));
+co  lormap(summer (64));
 ylabel("Run Time (s)");
 xlabel("Problem Number")
 
@@ -61,3 +61,5 @@ paperposition = get (gcf, "paperposition");
 print -landscape -dpdf dist/euler.pdf;
 
 
+
+[starts, ends, run_starts, run_ends] = textread('dist/compile.dat','%f,%f,%f,%f')

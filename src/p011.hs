@@ -42,5 +42,5 @@ prods a = [product xs | i <- range $ bounds a,
                         all (inArray a) is,
                         let xs = map (a!) is]
 main :: IO()
-main = print . maximum . prods . input =<< readFile "Data/011.txt"
+main = print . maximum . prods . input =<< readFile "src/Euler/Problems/Data/011.txt"
 
