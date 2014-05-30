@@ -109,3 +109,651 @@ benchmark bench-euler
                     split 
     default-language: Haskell2010
 
+-- Begin problems --
+
+executable p001
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p001.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p002
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p002.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p003
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p003.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p004
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p004.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p005
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p005.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p006
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p006.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p007
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p007.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p008
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p008.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p009
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p009.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p010
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p010.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p011
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p011.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p012
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p012.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p013
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p013.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p014
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p014.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p015
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p015.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p016
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p016.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p017
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p017.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p018
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p018.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p019
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p019.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p020
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p020.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p021
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p021.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p022
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p022.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p023
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p023.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p024
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p024.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p025
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p025.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p026
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p026.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p027
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p027.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p028
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p028.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p029
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p029.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p030
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p030.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p031
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p031.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p032
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p032.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p033
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p033.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p034
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p034.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p035
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p035.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p036
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p036.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p037
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p037.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p038
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p038.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p039
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p039.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p040
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p040.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p041
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p041.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p046
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p046.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+executable p096
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p096.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+
+-- End Problems

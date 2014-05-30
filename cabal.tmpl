@@ -1,0 +1,17 @@
+{% for exe in exes %}
+executable {{exe}}
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            {{exe}}.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
+
+{% endfor %}
+

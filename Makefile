@@ -16,7 +16,15 @@ CABAL=$(HOME)/.cabal/bin/cabal-dev
 
 .PHONY: all clean depend test
 
-all: $(PROGS) .depend
+all: cabal.sandbox.config
+
+cabal.sandbox.config:
+	cabal sandbox init
+	cabal install -j8 --enable-benchmarks --enable-tests --only-dependencies
+	cabal configure --enable-benchmarks --enable-tests
+
+
+
 
 %: %.o $(LIBS) $(DEP_LIBS)
 	@echo -n "$*.hs\t" >> $(COMPILE_TIMES)
@@ -44,9 +52,7 @@ euler.pdf: dist/times.dat $(BENCH_PROGS)
 	octave -q util/process.m
 
 clean: 
-	rm -rf $(PROGS) $(BENCH_PROGS) dist/* .depend
-	find . -name *.o -exec rm -rf {} \;
-	find . -name *.hi -exec rm -rf {} \;
+	cabal sandbox delete
 
 #Standard Suffix Rules
 .o.hi: 
