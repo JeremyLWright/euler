@@ -1,388 +1,388 @@
 PROGS=dist/build/p001/p001 dist/build/p002/p002 dist/build/p003/p003 dist/build/p004/p004 dist/build/p005/p005 dist/build/p006/p006 dist/build/p007/p007 dist/build/p008/p008 dist/build/p009/p009 dist/build/p010/p010 dist/build/p011/p011 dist/build/p012/p012 dist/build/p013/p013 dist/build/p014/p014 dist/build/p015/p015 dist/build/p016/p016 dist/build/p017/p017 dist/build/p018/p018 dist/build/p019/p019 dist/build/p020/p020 dist/build/p021/p021 dist/build/p022/p022 dist/build/p023/p023 dist/build/p024/p024 dist/build/p025/p025 dist/build/p026/p026 dist/build/p027/p027 dist/build/p028/p028 dist/build/p029/p029 dist/build/p030/p030 dist/build/p031/p031 dist/build/p032/p032 dist/build/p033/p033 dist/build/p034/p034 dist/build/p035/p035 dist/build/p036/p036 dist/build/p037/p037 dist/build/p038/p038 dist/build/p039/p039 dist/build/p040/p040 dist/build/p041/p041 dist/build/p046/p046 dist/build/p096/p096 
 
 dist/build/p001/p001: src/p001.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p002/p002: src/p002.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p003/p003: src/p003.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p004/p004: src/p004.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p005/p005: src/p005.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p006/p006: src/p006.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p007/p007: src/p007.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p008/p008: src/p008.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p009/p009: src/p009.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p010/p010: src/p010.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p011/p011: src/p011.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p012/p012: src/p012.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p013/p013: src/p013.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p014/p014: src/p014.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p015/p015: src/p015.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p016/p016: src/p016.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p017/p017: src/p017.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p018/p018: src/p018.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p019/p019: src/p019.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p020/p020: src/p020.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p021/p021: src/p021.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p022/p022: src/p022.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p023/p023: src/p023.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p024/p024: src/p024.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p025/p025: src/p025.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p026/p026: src/p026.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p027/p027: src/p027.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p028/p028: src/p028.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p029/p029: src/p029.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p030/p030: src/p030.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p031/p031: src/p031.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p032/p032: src/p032.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p033/p033: src/p033.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p034/p034: src/p034.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p035/p035: src/p035.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p036/p036: src/p036.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p037/p037: src/p037.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p038/p038: src/p038.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p039/p039: src/p039.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p040/p040: src/p040.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p041/p041: src/p041.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p046/p046: src/p046.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p096/p096: src/p096.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"

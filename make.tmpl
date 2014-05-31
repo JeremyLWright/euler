@@ -1,11 +1,11 @@
 PROGS={% for exe in exes %}dist/build/{{exe}}/{{exe}} {% endfor %}
 {% for exe in exes %}
 dist/build/{{exe}}/{{exe}}: src/{{exe}}.hs cabal.sandbox.config
-	@echo -n "$<.hs\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	@echo -n "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
-	./$@
-	@echo "$(GET_TIMESTAMP)\t" >> $(COMPILE_TIMES)
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 {% endfor %}

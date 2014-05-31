@@ -1,5 +1,5 @@
 import Euler.NumberProperties
-import Euler.Problems
+import Euler.Problems.P046
 
 --divide2 :: Integral a => a -> a
 --divide2 x = x `div` 2
@@ -8,7 +8,7 @@ import Euler.Problems
 --                | otherwise      = False
 --                where second_term = divide2 x 
 
-main = print "working"
+main = print prob046
  
 ---- Tests --
 --prop_div2:: Int -> Bool

@@ -23,7 +23,7 @@ cabal.sandbox.config:
 	cabal sandbox init
 	cabal install -j8 --enable-benchmarks --enable-tests --only-dependencies
 	cabal configure --enable-benchmarks --enable-tests
-	mkdir dist
+	mkdir -p dist
 
 $(COMPILE_TIMES): $(PROGS)
 
