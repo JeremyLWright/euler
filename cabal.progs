@@ -1,115 +1,3 @@
-name:                euler
-version:             0.1.0.0
-synopsis:            Project Euler Problems in Haskell
-homepage:            bitbucket.org/jwright/euler
-license:             BSD3
-license-file:        LICENSE
-author:              Jeremy Wright
-maintainer:          jeremy@codestrokes.com
-build-type:          Simple
-cabal-version:       >=1.10
-
-library
-    build-depends:      base ==4.6.*,
-                        containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
-                        parallel ==3.2.*,
-                        array,
-                        primes, 
-                        digits, 
-                        split
-    Exposed-Modules:    Euler.Problems, 
-                        Euler.Combinatorics, 
-                        Euler.NumberTheory, 
-                        Euler.ONeillPrimes, 
-                        Euler.NumberProperties
-    hs-source-dirs:     src
-    default-language:   Haskell2010
-
-Test-Suite test-problems
-    type:           exitcode-stdio-1.0
-    hs-source-dirs: testsuite/adhoc, src
-    main-is:        test-problems.hs
-    build-depends:  base,
-                    euler, 
-                    HUnit,
-                    QuickCheck,
-                    array,
-                    containers, 
-                    digits, 
-                    primes, 
-                    split, 
-                    test-framework,
-                    test-framework-hunit,
-                    test-framework-quickcheck2
-    default-language: Haskell2010
-
-Test-Suite test-euler
-    type:           exitcode-stdio-1.0
-    hs-source-dirs: testsuite/adhoc, src
-    main-is:        test-euler.hs
-    build-depends:  base,
-                    euler, 
-                    HUnit,
-                    QuickCheck,
-                    array,
-                    containers, 
-                    digits, 
-                    primes, 
-                    split, 
-                    test-framework,
-                    test-framework-hunit,
-                    test-framework-quickcheck2
-    default-language: Haskell2010
-
---Test-Suite test-quick
---    type:           exitcode-stdio-1.0
---    hs-source-dirs: testsuite/quick, src
---    main-is:        primes.hs
---    build-depends:  base,
---                    euler, 
---                    HUnit,
---                    QuickCheck,
---                    array,
---                    containers, 
---                    digits, 
---                    primes, 
---                    split, 
---                    test-framework,
---                    test-framework-hunit,
---                    test-framework-quickcheck2
---    default-language: Haskell2010
-
-benchmark bench-problems
-    type:       exitcode-stdio-1.0
-    hs-source-dirs: testsuite/benchmarks, src
-    main-is:        problems.hs
-    build-depends:  base, 
-                    euler, 
-                    array,
-                    containers, 
-                    criterion, 
-                    digits, 
-                    primes, 
-                    split 
-    default-language: Haskell2010
-
-benchmark bench-euler
-    type:       exitcode-stdio-1.0
-    hs-source-dirs: testsuite/benchmarks, src
-    main-is:        prime.hs
-    build-depends:  base, 
-                    euler, 
-                    array,
-                    containers, 
-                    criterion, 
-                    digits, 
-                    primes, 
-                    split 
-    default-language: Haskell2010
-
--- Begin problems --
 
 executable p001
     build-depends:      base ==4.6.*,
@@ -725,6 +613,7 @@ executable p041
     hs-source-dirs:     src
     default-language:   Haskell2010
 
+
 executable p042
     build-depends:      base ==4.6.*,
                         containers ==0.5.*,
@@ -738,6 +627,8 @@ executable p042
     main-is:            p042.hs
     hs-source-dirs:     src
     default-language:   Haskell2010
+
+
 executable p043
     build-depends:      base ==4.6.*,
                         containers ==0.5.*,
@@ -753,7 +644,6 @@ executable p043
     default-language:   Haskell2010
 
 
-
 executable p045
     build-depends:      base ==4.6.*,
                         containers ==0.5.*,
@@ -767,6 +657,8 @@ executable p045
     main-is:            p045.hs
     hs-source-dirs:     src
     default-language:   Haskell2010
+
+
 executable p046
     build-depends:      base ==4.6.*,
                         containers ==0.5.*,
@@ -797,4 +689,3 @@ executable p096
     default-language:   Haskell2010
 
 
--- End Problems

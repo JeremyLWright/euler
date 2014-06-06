@@ -1,4 +1,3 @@
-PROGS={% for exe in exes %}dist/build/{{exe}}/{{exe}} {% endfor %}
 {% for exe in exes %}
 dist/build/{{exe}}/{{exe}}: src/{{exe}}.hs cabal.sandbox.config
 	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"

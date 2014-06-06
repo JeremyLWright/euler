@@ -6,15 +6,16 @@ rs=ts(:,4); % Run Start Times
 rf=ts(:,5); % Run Stop Times
 c = cf-cs;     % Compile times
 r = rf - rs;  % Run times
+
 lr = sum(r);
 lc = sum(c);
 slc = sprintf("%.2f s", lc);
 slr = sprintf("%.2f s", lr);
-
+total = sprintf("Total: %.2f s", lr + lc)
 subplot(2,2,1);
 pie([lr, lc], labels={slr, slc});
 title("Jeremy's Project Euler");
-xlabel("Test.");
+xlabel(total);
 legend("Runtime", "Compile");
 
 subplot(2,2,2);
@@ -26,16 +27,19 @@ xlabel("Runtimes (s)");
 
 subplot(2,2,3);
 t = [1:size(r)(1)];
-plot(t, r, '.', t, c, '.');
+plot(t, r, '.', t, c, '-');
+legend("Run", "Compile");
 colormap(summer (64))
 set(gca, 'yscale', 'log');
 ylabel("Runtime (s)")
 xlabel("Problem #")
 
 subplot(2,2,4);
-t = [0:size(rs)(1)-1];
-plot(t, rf-cs(1,1), t, cf-cs(1,1));
-legend("Runtime", "Compile");
+offset = cs(1,1);
+cum=sort([cs-offset;rs-offset;rf(size(rf)(1))-offset]);
+t=linspace(1,size(r),size(cum)(1))';
+plot(t, cum);
+legend("Compile -> Run");
 xlabel("Problem #");
 ylabel("Cumulative Time (s)");
 

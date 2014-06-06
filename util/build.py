@@ -11,10 +11,10 @@ for (dirpath, dirnames, filenames) in os.walk('src'):
         if match:
             fs.append(f.split('.')[0])
 
-template = Template(file("cabal.tmpl", "r").read())
+template = Template(file("util/cabal.tmpl", "r").read())
 with open("cabal.progs", "w") as f:
     f.write(template.render(exes=sorted(fs)))
 
-template = Template(file("make.tmpl", "r").read())
+template = Template(file("util/make.tmpl", "r").read())
 with open("make.progs", "w") as f:
     f.write(template.render(exes=sorted(fs)))

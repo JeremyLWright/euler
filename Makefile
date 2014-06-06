@@ -1,25 +1,17 @@
-#SRCS=$(wildcard src/*.hs)
-#PROGS=$(patsubst src/%.hs,dist/build/%/%,$(SRCS))
-#BENCH_SRCS=$(wildcard testsuite/benchmarks/*.hs)
-#BENCH_PROGS=$(patsubst %.hs,%,$(BENCH_SRCS))
-#TEST_SRCS=$(wildcard testsuite/tests/Euler/*.hs)
-#TEST_PROGS=$(patsubst %.hs,%,$(TEST_SRCS))
-#LIBS=$(wildcard src/Euler/*.hs)
+SRCS=$(sort $(wildcard src/*.hs))
+PROGST=$(patsubst src/%.hs,%,$(SRCS))
+PROGS=$(sort $(foreach root,$(PROGST),dist/build/$(root)/$(root)))
 COMPILE_TIMES=dist/compile.dat
-#HC=ghc
-#DEP_LIBS=dist/packages-7.6.3.conf
-#HC_OPTS=-Wall -prof -O -isrc/ -package-db=$(DEP_LIBS)
 GET_TIMESTAMP=$(shell date +%s.%N)
-#CABAL=$(HOME)/.cabal/bin/cabal-dev
-
+.SUFFIXES: .hs
 .PHONY: all clean
 
-
-all: cabal.sandbox.config $(COMPILE_TIMES)
+all: cabal.sandbox.config $(COMPILE_TIMES) dist/euler.pdf
 
 sandbox: cabal.sandbox.config
 
 -include make.progs
+
 
 cabal.sandbox.config:
 	cabal sandbox init
@@ -29,14 +21,10 @@ cabal.sandbox.config:
 
 $(COMPILE_TIMES): $(PROGS)
 
-check: euler.pdf
-	@:
+depends: 
+	python util/build.py
 
-dist/times.dat: $(PROGS)
-	util/EulerValues.py --answers util/answers.js --file dist/times.dat $(PROGS)
-
-euler.pdf: dist/times.dat $(BENCH_PROGS)
-	testsuite/benchmarks/prime > dist/bench.dat
+dist/euler.pdf: $(COMPILE_TIMES)
 	octave -q util/process.m
 
 clean: 

@@ -1,4 +1,3 @@
-PROGS=dist/build/p001/p001 dist/build/p002/p002 dist/build/p003/p003 dist/build/p004/p004 dist/build/p005/p005 dist/build/p006/p006 dist/build/p007/p007 dist/build/p008/p008 dist/build/p009/p009 dist/build/p010/p010 dist/build/p011/p011 dist/build/p012/p012 dist/build/p013/p013 dist/build/p014/p014 dist/build/p015/p015 dist/build/p016/p016 dist/build/p017/p017 dist/build/p018/p018 dist/build/p019/p019 dist/build/p020/p020 dist/build/p021/p021 dist/build/p022/p022 dist/build/p023/p023 dist/build/p024/p024 dist/build/p025/p025 dist/build/p026/p026 dist/build/p027/p027 dist/build/p028/p028 dist/build/p029/p029 dist/build/p030/p030 dist/build/p031/p031 dist/build/p032/p032 dist/build/p033/p033 dist/build/p034/p034 dist/build/p035/p035 dist/build/p036/p036 dist/build/p037/p037 dist/build/p038/p038 dist/build/p039/p039 dist/build/p040/p040 dist/build/p041/p041 dist/build/p046/p046 dist/build/p096/p096 
 
 dist/build/p001/p001: src/p001.hs cabal.sandbox.config
 	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
@@ -361,6 +360,33 @@ dist/build/p040/p040: src/p040.hs cabal.sandbox.config
 	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
 
 dist/build/p041/p041: src/p041.hs cabal.sandbox.config
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	cabal -j8 build $<
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
+
+dist/build/p042/p042: src/p042.hs cabal.sandbox.config
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	cabal -j8 build $<
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
+
+dist/build/p043/p043: src/p043.hs cabal.sandbox.config
+	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	cabal -j8 build $<
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
+	./$@ 
+	bash -ac "echo '`date +%s.%N`' >> $(COMPILE_TIMES)"
+
+dist/build/p045/p045: src/p045.hs cabal.sandbox.config
 	bash -ac "echo -n '$<,' >> $(COMPILE_TIMES)"
 	bash -ac "echo -n '`date +%s.%N`,' >> $(COMPILE_TIMES)"
 	cabal -j8 build $<
