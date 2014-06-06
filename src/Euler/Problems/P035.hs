@@ -8,7 +8,7 @@ circular_primes (x:xs)
     | all isPrime p = x :  circular_primes xs
     | otherwise     = circular_primes xs
     where
-        p = permutations x
+        p = rotations x
 
 prob035 :: Int
 prob035 = length $ circular_primes $ takeWhile (<1000000) primes

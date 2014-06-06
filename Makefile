@@ -17,6 +17,8 @@ GET_TIMESTAMP=$(shell date +%s.%N)
 
 all: cabal.sandbox.config $(COMPILE_TIMES)
 
+sandbox: cabal.sandbox.config
+
 -include make.progs
 
 cabal.sandbox.config:
