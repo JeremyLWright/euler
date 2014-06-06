@@ -725,7 +725,35 @@ executable p041
     hs-source-dirs:     src
     default-language:   Haskell2010
 
+executable p043
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p043.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
 
+
+
+executable p045
+    build-depends:      base ==4.6.*,
+                        containers ==0.5.*,
+                        array ==0.4.*,
+                        time ==1.4.*,
+                        parallel ==3.2.*,
+                        array,
+                        primes, 
+                        digits, 
+                        split
+    main-is:            p045.hs
+    hs-source-dirs:     src
+    default-language:   Haskell2010
 executable p046
     build-depends:      base ==4.6.*,
                         containers ==0.5.*,

@@ -41,6 +41,8 @@ module Euler.Problems
         module Euler.Problems.P039,
         module Euler.Problems.P040,
         module Euler.Problems.P041,
+        module Euler.Problems.P043,
+        module Euler.Problems.P045,
         module Euler.Problems.P046,
         module Euler.Problems.P048,
         module Euler.Problems.P056,
@@ -88,6 +90,8 @@ import Euler.Problems.P038
 import Euler.Problems.P039
 import Euler.Problems.P040
 import Euler.Problems.P041
+import Euler.Problems.P043
+import Euler.Problems.P045
 import Euler.Problems.P046
 import Euler.Problems.P048
 import Euler.Problems.P056
