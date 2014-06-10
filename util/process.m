@@ -44,10 +44,6 @@ legend("Compile -> Run");
 xlabel("Problem #");
 ylabel("Cumulative Time (s)");
 
-
-
-# To change orientation 
-# equivalent to "orient tall" 
 papersize = get (gcf, "papersize");
 border = 0.0; 
 set (gcf, "paperposition", [border, border, 8, 11]) ;
