@@ -12,7 +12,7 @@ lr = sum(r);
 lc = sum(c);
 slc = sprintf("%.2f s", lc);
 slr = sprintf("%.2f s", lr);
-total = sprintf("Jeremy's Project Euler - %d problems in %.2f sec", num_problems, lr + lc)
+total = sprintf("Jeremy's Project Euler - %d problems in %.2f sec", num_problems, lr + lc);
 subplot(2,2,1);
 pie([lr, lc], labels={slr, slc});
 title(total);
@@ -48,8 +48,9 @@ ylabel("Cumulative Time (s)");
 
 # To change orientation 
 # equivalent to "orient tall" 
-papersize = get (gcf, "papersize")
+papersize = get (gcf, "papersize");
 border = 0.0; 
-set (gcf, "paperposition", [border, border, 8, 11]) 
+set (gcf, "paperposition", [border, border, 8, 11]) ;
 
 print -landscape -dpdf dist/euler.pdf;
+print -dpng dist/euler.png;

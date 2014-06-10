@@ -14,6 +14,7 @@ deploy:
   file: 
      - dist/compile.dat
      - dist/euler.pdf
+     - dist/euler.png
   skip_cleanup: true
   on:
     tags: true
