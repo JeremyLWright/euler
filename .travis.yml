@@ -3,3 +3,12 @@ ghc:
     - 7.6
 script:
     - make
+deploy:
+  provider: releases
+  api-key: "5c5d3ced773f33bd0b710caba14138fce4434db8"
+  file: "dist/compile.dat"
+  skip_cleanup: true
+  on:
+    tags: true
+    all_branches: true
+
