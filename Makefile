@@ -6,7 +6,7 @@ GET_TIMESTAMP=$(shell date +%s.%N)
 .SUFFIXES: .hs
 .PHONY: all clean
 
-all: cabal.sandbox.config $(COMPILE_TIMES) dist/euler.pdf
+all: cabal.sandbox.config $(COMPILE_TIMES)
 
 sandbox: cabal.sandbox.config
 
@@ -23,6 +23,8 @@ $(COMPILE_TIMES): $(PROGS)
 
 depends: 
 	python util/build.py
+
+metrics: dist/euler.pdf
 
 dist/euler.pdf: $(COMPILE_TIMES)
 	octave -q util/process.m
