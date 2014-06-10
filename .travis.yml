@@ -1,5 +1,5 @@
 language: haskell
 ghc: 
-	- 7.6
+    - 7.6
 script:
-	- make
+    - make
