@@ -7,10 +7,13 @@ before_install:
 
 script:
     - make && cabal test && make metrics
+
 deploy:
   provider: releases
-  api-key: "5c5d3ced773f33bd0b710caba14138fce4434db8"
-  file: "dist/compile.dat"
+  api-key: 5c5d3ced773f33bd0b710caba14138fce4434db8
+  file: 
+     - dist/compile.dat
+     - dist/euler.pdf
   skip_cleanup: true
   on:
     tags: true
