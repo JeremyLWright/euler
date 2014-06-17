@@ -48,5 +48,5 @@ papersize = get (gcf, "papersize");
 border = 0.0; 
 set (gcf, "paperposition", [border, border, 8, 11]) ;
 
-print -landscape -dpdf dist/euler.pdf;
 print -dpng dist/euler.png;
+print -landscape -dpdf dist/euler.pdf;
