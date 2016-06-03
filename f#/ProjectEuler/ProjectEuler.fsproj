@@ -59,6 +59,7 @@
     <None Include="App.config" />
     <Content Include="packages.config" />
     <Compile Include="P002.fs" />
+    <Compile Include="P003.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
