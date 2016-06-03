@@ -60,6 +60,7 @@
     <Content Include="packages.config" />
     <Compile Include="P002.fs" />
     <Compile Include="P003.fs" />
+    <Compile Include="P004.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
