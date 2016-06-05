@@ -5,14 +5,14 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>0f883f7f-13c0-4316-b49b-2a9f72b28c9c</ProjectGuid>
+    <ProjectGuid>97db495a-034f-4fe2-8859-cd4ebe0797fb</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>ProjectEuler</RootNamespace>
-    <AssemblyName>ProjectEuler</AssemblyName>
+    <RootNamespace>Problems</RootNamespace>
+    <AssemblyName>Problems</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
-    <Name>ProjectEuler</Name>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Name>Problems</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,9 +22,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Debug\ProjectEuler.XML</DocumentationFile>
-    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>bin\Debug\Problems.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -33,9 +31,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DocumentationFile>bin\Release\ProjectEuler.XML</DocumentationFile>
-    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>bin\Release\Problems.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
@@ -55,10 +51,15 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <None Include="App.config" />
+    <Compile Include="P001.fs" />
+    <Compile Include="P002.fs" />
+    <Compile Include="P003.fs" />
+    <Compile Include="P004.fs" />
     <Content Include="packages.config" />
-    <Compile Include="Euclid.fs" />
-    <Compile Include="Prime.fs" />
+    <Compile Include="P005.fs" />
+    <Compile Include="P006.fs" />
+    <Compile Include="P007.fs" />
+    <Compile Include="P009.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FsCheck">
@@ -85,6 +86,13 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectEuler\ProjectEuler.fsproj">
+      <Name>ProjectEuler</Name>
+      <Project>{0f883f7f-13c0-4316-b49b-2a9f72b28c9c}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

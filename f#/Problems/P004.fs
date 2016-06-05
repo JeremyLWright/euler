@@ -1,6 +1,6 @@
 ﻿namespace ProjectEuler
 
-module ``Project Euler - Problem 4`` =
+module ``Problem 4`` =
     open NUnit.Framework
     open FsUnit
 
@@ -22,3 +22,5 @@ module ``Project Euler - Problem 4`` =
     [<Category("Solution")>]
     let solution () =
         triplets |> Seq.max |> should equal 906609
+
+    

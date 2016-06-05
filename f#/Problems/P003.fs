@@ -1,6 +1,6 @@
 ﻿namespace ProjectEuler
 
-module ``Project Euler - Problem 3`` =
+module ``Problem 3`` =
     open NUnit.Framework
     open FsUnit
 
