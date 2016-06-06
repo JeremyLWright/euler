@@ -11,9 +11,9 @@ module ``Problem 7`` =
     [<Test>]
     [<Category("Example")>]
     let example () =
-        Seq.nth 6 Prime.primes |> should equal 13
+        Seq.nth (6 - 1) Prime.primes |> should equal 13
     
     [<Test>]
     [<Category("Solution")>]
     let solution () =
-        Seq.nth 10001 Prime.primes |> should equal 104743 
+        Seq.nth (10001 - 1) Prime.primes |> should equal 104743 

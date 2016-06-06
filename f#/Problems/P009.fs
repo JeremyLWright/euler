@@ -14,9 +14,14 @@ module ``Problem 9`` =
     //Find the product abc.
     //Answer: 31875000
 
-    let triplets = 1
+    let triplets s = seq { for a in 3 .. (s - 3)/3 do
+                            for b in (a + 1) .. (s - 1 - a)/2 do
+                                let c = s - a - b
+                                if pown a 2 + pown b 2 = pown c 2 then yield (a, b, c)
+                                }
 
     [<Test>]
     [<Category("Solution")>]
     let solution () =
-        triplets |> should equal 31875000
+        match triplets 1000 |> Seq.nth 0 with
+        | (a, b, c) -> a * b * c |> should equal 31875000
