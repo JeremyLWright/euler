@@ -62,6 +62,7 @@
     <Compile Include="P009.fs" />
     <Compile Include="P010.fs" />
     <Compile Include="P013.fs" />
+    <Compile Include="P014.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FsCheck">
