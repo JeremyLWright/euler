@@ -7,32 +7,32 @@ module ``Problem 14`` =
     open System
 
     let collatz_step n =
-        match n % 2 with
-        | 0 -> n / 2
-        | _ -> 3*n + 1
+        match n with 
+        | n when n < 0UL -> failwith "Negative Stuff..."
+        | n when n % 2UL = 0UL -> n / 2UL
+        | _ -> 3UL*n + 1UL
 
-    let rec collatz n =
-        match n with
-        | 1 -> Seq.singleton 1
-        | _ -> Seq.append [n] (collatz_step n |> collatz)
+    let collatz n =
+        let collatz' n =
+            n |> Seq.unfold (fun x -> 
+                match x with
+                | 1UL -> None
+                | _ -> Some(x, collatz_step x))
+        Seq.append (collatz' n) [1UL]
 
     let collatz_pair n = (collatz n |> Seq.length), n
 
     [<Test>]
     [<Category("Example")>]
     let example () =
-        collatz 13 |> should equal [13; 40 ;  20 ;  10 ;  5 ;  16 ;  8 ;  4 ;  2 ;  1]
+        collatz 13UL  |> should equal [13; 40 ;  20 ;  10 ;  5 ;  16 ;  8 ;  4 ;  2 ;  1]
     
     [<Test>]
-    [<Category("Example")>]
-    let exampleLength () =
-        collatz_pair 13 |> should equal (10, 13)
-
-    //[<Test>]
-    //[<Category("Solution")>]
-    //let solution () =
-    //    Seq.map collatz_pair [1..1000000] 
-    //    |> Seq.max
-    //    |> should equal (1, 837799)
+    [<Category("Solution")>]
+    let solution () =
+        let x = Seq.map collatz_pair [1UL..1000000UL] |> Seq.max 
+        snd x |> should equal 837799UL
+        fst x |> should equal 525UL 
+        //|> should equal (525UL, 837799UL)
 
 
