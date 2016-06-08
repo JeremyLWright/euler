@@ -7,6 +7,59 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ProjectEuler", "ProjectEule
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Problems", "Problems\Problems.fsproj", "{97DB495A-034F-4FE2-8859-CD4EBE0797FB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Haskell", "Haskell", "{36EF0E14-73FC-487F-9E21-BEB161C07FAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problems", "Problems", "{0D6DA285-0D90-4797-A3E8-4B08096D098C}"
+	ProjectSection(SolutionItems) = preProject
+		..\haskell\src\Euler\Problems\P001.hs = ..\haskell\src\Euler\Problems\P001.hs
+		..\haskell\src\Euler\Problems\P002.hs = ..\haskell\src\Euler\Problems\P002.hs
+		..\haskell\src\Euler\Problems\P003.hs = ..\haskell\src\Euler\Problems\P003.hs
+		..\haskell\src\Euler\Problems\P004.hs = ..\haskell\src\Euler\Problems\P004.hs
+		..\haskell\src\Euler\Problems\P005.hs = ..\haskell\src\Euler\Problems\P005.hs
+		..\haskell\src\Euler\Problems\P006.hs = ..\haskell\src\Euler\Problems\P006.hs
+		..\haskell\src\Euler\Problems\P007.hs = ..\haskell\src\Euler\Problems\P007.hs
+		..\haskell\src\Euler\Problems\P008.hs = ..\haskell\src\Euler\Problems\P008.hs
+		..\haskell\src\Euler\Problems\P009.hs = ..\haskell\src\Euler\Problems\P009.hs
+		..\haskell\src\Euler\Problems\P010.hs = ..\haskell\src\Euler\Problems\P010.hs
+		..\haskell\src\Euler\Problems\P011.hs = ..\haskell\src\Euler\Problems\P011.hs
+		..\haskell\src\Euler\Problems\P012.hs = ..\haskell\src\Euler\Problems\P012.hs
+		..\haskell\src\Euler\Problems\P013.hs = ..\haskell\src\Euler\Problems\P013.hs
+		..\haskell\src\Euler\Problems\P014.hs = ..\haskell\src\Euler\Problems\P014.hs
+		..\haskell\src\Euler\Problems\P015.hs = ..\haskell\src\Euler\Problems\P015.hs
+		..\haskell\src\Euler\Problems\P016.hs = ..\haskell\src\Euler\Problems\P016.hs
+		..\haskell\src\Euler\Problems\P017.hs = ..\haskell\src\Euler\Problems\P017.hs
+		..\haskell\src\Euler\Problems\P018.hs = ..\haskell\src\Euler\Problems\P018.hs
+		..\haskell\src\Euler\Problems\P019.hs = ..\haskell\src\Euler\Problems\P019.hs
+		..\haskell\src\Euler\Problems\P020.hs = ..\haskell\src\Euler\Problems\P020.hs
+		..\haskell\src\Euler\Problems\P021.hs = ..\haskell\src\Euler\Problems\P021.hs
+		..\haskell\src\Euler\Problems\P022.hs = ..\haskell\src\Euler\Problems\P022.hs
+		..\haskell\src\Euler\Problems\P023.hs = ..\haskell\src\Euler\Problems\P023.hs
+		..\haskell\src\Euler\Problems\P024.hs = ..\haskell\src\Euler\Problems\P024.hs
+		..\haskell\src\Euler\Problems\P025.hs = ..\haskell\src\Euler\Problems\P025.hs
+		..\haskell\src\Euler\Problems\P026.hs = ..\haskell\src\Euler\Problems\P026.hs
+		..\haskell\src\Euler\Problems\P027.hs = ..\haskell\src\Euler\Problems\P027.hs
+		..\haskell\src\Euler\Problems\P028.hs = ..\haskell\src\Euler\Problems\P028.hs
+		..\haskell\src\Euler\Problems\P029.hs = ..\haskell\src\Euler\Problems\P029.hs
+		..\haskell\src\Euler\Problems\P030.hs = ..\haskell\src\Euler\Problems\P030.hs
+		..\haskell\src\Euler\Problems\P031.hs = ..\haskell\src\Euler\Problems\P031.hs
+		..\haskell\src\Euler\Problems\P032.hs = ..\haskell\src\Euler\Problems\P032.hs
+		..\haskell\src\Euler\Problems\P033.hs = ..\haskell\src\Euler\Problems\P033.hs
+		..\haskell\src\Euler\Problems\P034.hs = ..\haskell\src\Euler\Problems\P034.hs
+		..\haskell\src\Euler\Problems\P035.hs = ..\haskell\src\Euler\Problems\P035.hs
+		..\haskell\src\Euler\Problems\P036.hs = ..\haskell\src\Euler\Problems\P036.hs
+		..\haskell\src\Euler\Problems\P037.hs = ..\haskell\src\Euler\Problems\P037.hs
+		..\haskell\src\Euler\Problems\P038.hs = ..\haskell\src\Euler\Problems\P038.hs
+		..\haskell\src\Euler\Problems\P039.hs = ..\haskell\src\Euler\Problems\P039.hs
+		..\haskell\src\Euler\Problems\P040.hs = ..\haskell\src\Euler\Problems\P040.hs
+		..\haskell\src\Euler\Problems\P041.hs = ..\haskell\src\Euler\Problems\P041.hs
+		..\haskell\src\Euler\Problems\P043.hs = ..\haskell\src\Euler\Problems\P043.hs
+		..\haskell\src\Euler\Problems\P045.hs = ..\haskell\src\Euler\Problems\P045.hs
+		..\haskell\src\Euler\Problems\P046.hs = ..\haskell\src\Euler\Problems\P046.hs
+		..\haskell\src\Euler\Problems\P048.hs = ..\haskell\src\Euler\Problems\P048.hs
+		..\haskell\src\Euler\Problems\P056.hs = ..\haskell\src\Euler\Problems\P056.hs
+		..\haskell\src\Euler\Problems\P096.hs = ..\haskell\src\Euler\Problems\P096.hs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +77,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0D6DA285-0D90-4797-A3E8-4B08096D098C} = {36EF0E14-73FC-487F-9E21-BEB161C07FAD}
 	EndGlobalSection
 EndGlobal

@@ -33,6 +33,5 @@ module ``Problem 14`` =
         let x = Seq.map collatz_pair [1UL..1000000UL] |> Seq.max 
         snd x |> should equal 837799UL
         fst x |> should equal 525UL 
-        //|> should equal (525UL, 837799UL)
 
 
