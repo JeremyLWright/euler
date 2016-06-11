@@ -51,7 +51,7 @@
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="P021.fs" />
+    <Compile Include="P023.fs" />
     <Compile Include="P001.fs" />
     <Compile Include="P002.fs" />
     <Compile Include="P003.fs" />
@@ -69,6 +69,7 @@
     <Compile Include="P017.fs" />
     <Compile Include="P019.fs" />
     <Compile Include="P020.fs" />
+    <Compile Include="P021.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FsCheck">
