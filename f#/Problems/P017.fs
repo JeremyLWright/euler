@@ -23,12 +23,6 @@ module ``Problem 17`` =
          "sixteen";"seventeen";"eighteen"; "nineteen"|]
     let ty = [|"twenty";"thirty";"forty";"fifty";"sixty";"seventy";"eighty";"ninety"|]
 
-    let digitToInt x = 
-        let y = x |> int
-        y - 48
-
-
-
     let rec decompose x = 
         match x with
         | x when x = 0 -> ""
