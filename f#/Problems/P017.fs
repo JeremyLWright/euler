@@ -4,6 +4,7 @@ module ``Problem 17`` =
     open NUnit.Framework
     open FsUnit
     open System
+    open Data.Char
 
 
 //If the numbers 1 to 5 are written out in words: one, two, three, four, five, 
@@ -28,38 +29,42 @@ module ``Problem 17`` =
 
 
 
-    let decompose x = 
+    let rec decompose x = 
         match x with
         | x when x = 0 -> ""
         | x when x < 20 -> one.[x - 1]
-        | x when x >= 20 && x < 100 -> ty.[firstDigit x]
+        | x when x >= 20 && x < 100 -> ty.[firstDigit x - 2] + decompose (x- firstDigit(x)*10)
+        | x when x < 1000 && x % 100 = 0 -> one.[firstDigit x - 1] + "hundred"
+        | x when x > 100 && x <= 999 -> one.[firstDigit x - 1] + "hundredand" + decompose (x - firstDigit x * 100)
+        | x when x = 1000 -> "onethousand"
+        | _  -> failwith "decompose is not define for input" + string(x)
 
     
-    [<Test>]
-    let ``first digit of 342`` () =
-        firstDigit 342 |> should equal 3
-    
-    [<Test>]
-    let ``first digit of 42`` () =
-        firstDigit 42 |> should equal 4
-    
-    [<Test>]
-    let ``first digit of 2`` () =
-        firstDigit 2 |> should equal 2
-
-
-         
     [<Test>]
     [<Category("example")>]
     let ``342`` () =
-        decompose 342 |> should equal 23
+        decompose 342 |> should equal "threehundredandfortytwo"
+    
+    [<Test>]
+    [<Category("example")>]
+    let ``length 342`` () =
+        decompose 342 |> String.length |> should equal 23 
     
     [<Test>]
     [<Category("example")>]
     let ``115`` () =
-        decompose 115 |> should equal 20
+        decompose 115 |> should equal "onehundredandfifteen"
+    
+    [<Test>]
+    [<Category("example")>]
+    let ``length 115`` () =
+        decompose 115 |> String.length |> should equal 20
 
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("example")>]
+    let ``1000`` () =
+         decompose 1000 |> should equal "onethousand"
+    [<Test>]
+    [<Category("solution")>]
     let solution () =
-         decompose 1000 |> should equal 1366
+        Seq.map (decompose >> String.length) [1..1000] |> Seq.sum |> should equal 21124

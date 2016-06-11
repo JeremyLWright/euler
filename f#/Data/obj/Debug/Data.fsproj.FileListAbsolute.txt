@@ -1,7 +1,0 @@
-C:\source\euler\f#\Data\bin\Debug\Data.XML
-C:\source\euler\f#\Data\bin\Debug\Data.dll
-C:\source\euler\f#\Data\bin\Debug\Data.pdb
-C:\source\euler\f#\Data\bin\Debug\FSharp.Core.dll
-C:\source\euler\f#\Data\bin\Debug\FSharp.Core.xml
-C:\source\euler\f#\Data\obj\Debug\Data.dll
-C:\source\euler\f#\Data\obj\Debug\Data.pdb

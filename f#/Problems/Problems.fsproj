@@ -94,6 +94,11 @@
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Data\Data.fsproj">
+      <Name>Data</Name>
+      <Project>{3f1b4182-0557-4249-9818-3779d2f82b4f}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\ProjectEuler\ProjectEuler.fsproj">
       <Name>ProjectEuler</Name>
       <Project>{0f883f7f-13c0-4316-b49b-2a9f72b28c9c}</Project>
