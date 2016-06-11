@@ -9,11 +9,11 @@ module ``Problem 7`` =
     //What is the 10 001st prime number?
 
     [<Test>]
-    [<Category("Example")>]
+    [<Category("example")>]
     let example () =
         Seq.nth (6 - 1) Prime.primes |> should equal 13
     
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         Seq.nth (10001 - 1) Prime.primes |> should equal 104743 

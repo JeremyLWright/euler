@@ -21,6 +21,6 @@ module ``Problem 3`` =
         factor 13195UL  |> Seq.sort |> should equal [5; 7; 13; 29]
 
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         factor 600851475143UL |> Seq.head |> should equal 6857

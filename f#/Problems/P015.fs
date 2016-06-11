@@ -12,6 +12,6 @@ module ``Problem 15`` =
 
     
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         choose (2UL*20UL) 20UL |> should equal 137846528820UL

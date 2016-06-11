@@ -15,4 +15,5 @@ module ``Problem 1`` =
     let sumUnder10 () = multiple3Or5 10 |> Seq.sum |> should equal 23
     
     [<Test>]
+    [<Category("solution")>]
     let answer () = multiple3Or5 1000 |> Seq.sum |> should equal 233168

@@ -17,6 +17,6 @@ module ``Problem 16`` =
          expSum 15 |> should equal 26
 
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
          expSum 1000 |> should equal 1366

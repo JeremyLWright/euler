@@ -19,7 +19,7 @@ module ``Problem 4`` =
                     if s = reverseString s then yield x}
 
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         triplets |> Seq.max |> should equal 906609
 

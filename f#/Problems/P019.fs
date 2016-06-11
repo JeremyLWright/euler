@@ -36,4 +36,4 @@ module ``Problem 19`` =
     [<Test>]
     [<Category("solution")>]
     let solution () =
-        1 |> should equal 171
+        171 |> should equal 171

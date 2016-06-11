@@ -9,11 +9,11 @@ module ``Problem 5`` =
     //What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
     
     [<Test>]
-    [<Category("Example")>]
+    [<Category("example")>]
     let example () =
         Seq.reduce Euclid.lcm [1..10] |> should equal 2520
 
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         Seq.reduce Euclid.lcm [1..20] |> should equal 232792560

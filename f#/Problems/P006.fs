@@ -21,16 +21,16 @@ module ``Problem 6`` =
     let squareOfSums a = Seq.sum [1..a] |> square
 
     [<Test>]
-    [<Category("Example")>]
+    [<Category("example")>]
     let example () =
         sumOfSquares 10 |> should equal 385
     
     [<Test>]
-    [<Category("Example")>]
+    [<Category("example")>]
     let example2 () =
         squareOfSums 10 |> should equal 3025
 
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         squareOfSums 100 - sumOfSquares 100 |> should equal 25164150

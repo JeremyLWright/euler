@@ -23,12 +23,12 @@ module ``Problem 14`` =
     let collatz_pair n = (collatz n |> Seq.length), n
 
     [<Test>]
-    [<Category("Example")>]
+    [<Category("example")>]
     let example () =
         collatz 13UL  |> should equal [13; 40 ;  20 ;  10 ;  5 ;  16 ;  8 ;  4 ;  2 ;  1]
     
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         let x = Seq.map collatz_pair [1UL..1000000UL] |> Seq.max 
         snd x |> should equal 837799UL

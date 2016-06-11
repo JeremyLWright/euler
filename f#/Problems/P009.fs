@@ -21,7 +21,7 @@ module ``Problem 9`` =
                                 }
 
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         match triplets 1000 |> Seq.nth 0 with
         | (a, b, c) -> a * b * c |> should equal 31875000

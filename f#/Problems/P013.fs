@@ -122,7 +122,7 @@ module ``Problem 13`` =
 
 
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         Seq.sum n 
         |> firstNDigits 10

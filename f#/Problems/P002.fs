@@ -29,7 +29,7 @@ module ``Problem 2`` =
     let ``first ten even terms of fib seq`` () = evenFibonacci |> Seq.take 3 |> should equal [ 2; 8; 34; ]
 
     [<Test>]
-    [<Category("Solution")>]
+    [<Category("solution")>]
     let solution () =
         evenFibonacci
         |> Seq.takeWhile (fun i -> i < 4000000 )
