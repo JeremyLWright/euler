@@ -103,6 +103,11 @@
       <Project>{3f1b4182-0557-4249-9818-3779d2f82b4f}</Project>
       <Private>True</Private>
     </ProjectReference>
+    <ProjectReference Include="..\NumberTheory\NumberTheory.fsproj">
+      <Name>NumberTheory</Name>
+      <Project>{5bbfa590-2134-49e5-966f-1701062f0422}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\ProjectEuler\ProjectEuler.fsproj">
       <Name>ProjectEuler</Name>
       <Project>{0f883f7f-13c0-4316-b49b-2a9f72b28c9c}</Project>

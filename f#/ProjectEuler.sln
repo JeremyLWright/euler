@@ -62,6 +62,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Problems", "Problems", "{0D
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Data", "Data\Data.fsproj", "{3F1B4182-0557-4249-9818-3779D2F82B4F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Euler", "Euler", "{67E83BA0-BE49-4652-B6DC-A05EEF4AE977}"
+	ProjectSection(SolutionItems) = preProject
+		..\haskell\src\Euler\Combinatorics.hs = ..\haskell\src\Euler\Combinatorics.hs
+		..\haskell\src\Euler\NumberProperties.hs = ..\haskell\src\Euler\NumberProperties.hs
+		..\haskell\src\Euler\NumberTheory.hs = ..\haskell\src\Euler\NumberTheory.hs
+		..\haskell\src\Euler\ONeillPrimes.hs = ..\haskell\src\Euler\ONeillPrimes.hs
+		..\haskell\src\Euler\Problems.hs = ..\haskell\src\Euler\Problems.hs
+		..\haskell\src\Euler\Sequences.hs = ..\haskell\src\Euler\Sequences.hs
+	EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NumberTheory", "NumberTheory\NumberTheory.fsproj", "{5BBFA590-2134-49E5-966F-1701062F0422}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -80,11 +92,16 @@ Global
 		{3F1B4182-0557-4249-9818-3779D2F82B4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F1B4182-0557-4249-9818-3779D2F82B4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F1B4182-0557-4249-9818-3779D2F82B4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BBFA590-2134-49E5-966F-1701062F0422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BBFA590-2134-49E5-966F-1701062F0422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BBFA590-2134-49E5-966F-1701062F0422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BBFA590-2134-49E5-966F-1701062F0422}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0D6DA285-0D90-4797-A3E8-4B08096D098C} = {36EF0E14-73FC-487F-9E21-BEB161C07FAD}
+		{67E83BA0-BE49-4652-B6DC-A05EEF4AE977} = {36EF0E14-73FC-487F-9E21-BEB161C07FAD}
 	EndGlobalSection
 EndGlobal
