@@ -73,6 +73,14 @@
       <HintPath>..\packages\FsUnit.2.2.0\lib\net45\FsUnit.NUnit.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="MathNet.Numerics">
+      <HintPath>..\packages\MathNet.Numerics.3.11.1\lib\net40\MathNet.Numerics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MathNet.Numerics.FSharp">
+      <HintPath>..\packages\MathNet.Numerics.FSharp.3.11.1\lib\net40\MathNet.Numerics.FSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="NHamcrest">
       <HintPath>..\packages\FsUnit.2.2.0\lib\net45\NHamcrest.dll</HintPath>

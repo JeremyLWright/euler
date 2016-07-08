@@ -1,3 +1,7 @@
 TestResult.xml
 .vs
 packages
+Debug
+Release
+*.opendb
+*.db
