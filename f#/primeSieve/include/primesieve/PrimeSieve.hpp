@@ -12,6 +12,8 @@
 #ifndef PRIMESIEVE_CLASS_HPP
 #define PRIMESIEVE_CLASS_HPP
 
+#include "primesieveExport.h"
+
 #include "Callback.hpp"
 
 #include <stdint.h>
@@ -26,7 +28,7 @@ namespace primesieve {
 /// maximum. The README file describes the algorithms used in more
 /// detail and doc/EXAMPLES contains source code examples.
 ///
-class PrimeSieve
+class PRIMESIEVE_EXPORT PrimeSieve
 {
   friend class PrimeFinder;
   friend class LockGuard;

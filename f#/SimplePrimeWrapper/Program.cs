@@ -3,7 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NativePrimes;
+using System.Runtime.InteropServices;
+
+public class PrimeSieve
+{
+    [DllImport("primesieve.dll")]
+    public static extern int primesieve_test();
+}
+
 
 namespace SimplePrimeWrapper
 {
@@ -13,9 +20,10 @@ namespace SimplePrimeWrapper
         {
             //PRIMESIEVE_EXPORT uint64_t* primesieve_generate_primes(uint64_t start, uint64_t stop, size_t* size);
 
-            ulong h;
-            var g = NativePrimes.NativePrimes.primesieve_generate_primes2(10, 15, out h);
-            Console.WriteLine($"Got {g} and {h}.");
+            //ulong h;
+            //var g = NativePrimes.NativePrimes.primesieve_generate_primes2(10, 15, out h);
+            //Console.WriteLine($"Got {g} and {h}.");
+            Console.WriteLine($"Testing Primes {PrimeSieve.primesieve_test()}");
 
         }
     }

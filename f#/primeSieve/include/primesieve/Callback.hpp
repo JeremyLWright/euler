@@ -11,6 +11,8 @@
 #ifndef CALLBACK_PRIMESIEVE_HPP
 #define CALLBACK_PRIMESIEVE_HPP
 
+#include "primesieveExport.h"
+
 #include <stdint.h>
 
 namespace primesieve {
@@ -20,7 +22,7 @@ namespace primesieve {
 /// @param T  must be uint64_t.
 ///
 template <typename T>
-class Callback
+class PRIMESIEVE_EXPORT Callback
 {
 public:
   virtual void callback(T prime) = 0;

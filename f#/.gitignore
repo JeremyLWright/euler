@@ -3,5 +3,6 @@ TestResult.xml
 packages
 Debug
 Release
+x64
 *.opendb
 *.db

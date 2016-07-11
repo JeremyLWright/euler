@@ -9,12 +9,171 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Header Files\primesieve">
+      <UniqueIdentifier>{a5b265ab-3c6e-47bc-aaa3-821b6f259d2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\msvc_compat">
+      <UniqueIdentifier>{774b095a-fcdf-4b4a-bdfa-df53c0eb805c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="readme.txt" />
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\bits.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\Callback.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\callback_t.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\cancel_callback.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\config.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\EratBig.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\EratMedium.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\EratSmall.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\iterator.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\littleendian_cast.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\malloc_vector.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\ParallelPrimeSieve.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\ParallelPrimeSieve-lock.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\pmath.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\PreSieve.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\PrimeFinder.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\PrimeGenerator.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\PrimeSieve.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\primesieve_error.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\primesieve_iterator.h">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\PrimeSieve-lock.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\PushBackPrimes.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\SieveOfEratosthenes.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\SieveOfEratosthenes-inline.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\toString.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="include\primesieve\WheelFactorization.hpp">
+      <Filter>Header Files\primesieve</Filter>
+    </ClInclude>
+    <ClInclude Include="src\msvc_compat\stdint.h">
+      <Filter>Source Files\msvc_compat</Filter>
+    </ClInclude>
+    <ClInclude Include="primesieveExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\EratBig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\EratMedium.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\EratSmall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\iterator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\ParallelPrimeSieve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\popcount.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\PreSieve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\PrimeFinder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\PrimeGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\PrimeSieve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\primesieve_iterator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\primesieve_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\primesieve-api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\primesieve-api-c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\PrimeSieve-nthPrime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\SieveOfEratosthenes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\primesieve\WheelFactorization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\msvc_compat\has_openmp.cpp">
+      <Filter>Source Files\msvc_compat</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

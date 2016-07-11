@@ -18,6 +18,8 @@
 #define PRIMESIEVE_VERSION_MINOR 6
 #define PRIMESIEVE_VERSION_PATCH 0
 
+#include "primesieveExport.h"
+
 #include <primesieve/PrimeSieve.hpp>
 #include <primesieve/ParallelPrimeSieve.hpp>
 #include <primesieve/Callback.hpp>
@@ -97,7 +99,7 @@ namespace primesieve
   ///           if n < 0 finds the nth prime < start (backwards).
   /// @pre   start <= 2^64 - 2^32 * 11.
   ///
-  uint64_t nth_prime(int64_t n, uint64_t start = 0);
+  PRIMESIEVE_EXPORT uint64_t nth_prime(int64_t n, uint64_t start = 0);
 
   /// Find the nth prime in parallel.
   /// By default all CPU cores are used, use
@@ -108,37 +110,37 @@ namespace primesieve
   ///           if n < 0 finds the nth prime < start (backwards).
   /// @pre   start <= 2^64 - 2^32 * 11.
   ///
-  uint64_t parallel_nth_prime(int64_t n, uint64_t start = 0);
+  PRIMESIEVE_EXPORT uint64_t parallel_nth_prime(int64_t n, uint64_t start = 0);
 
   /// Count the primes within the interval [start, stop].
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t count_primes(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t count_primes(uint64_t start, uint64_t stop);
 
   /// Count the twin primes within the interval [start, stop].
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t count_twins(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t count_twins(uint64_t start, uint64_t stop);
 
   /// Count the prime triplets within the interval [start, stop].
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t count_triplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t count_triplets(uint64_t start, uint64_t stop);
 
   /// Count the prime quadruplets within the interval [start, stop].
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t count_quadruplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t count_quadruplets(uint64_t start, uint64_t stop);
 
   /// Count the prime quintuplets within the interval [start, stop].
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t count_quintuplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t count_quintuplets(uint64_t start, uint64_t stop);
 
   /// Count the prime sextuplets within the interval [start, stop].
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t count_sextuplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t count_sextuplets(uint64_t start, uint64_t stop);
 
   /// Count the primes within the interval [start, stop] in
   /// parallel. By default all CPU cores are used, use
@@ -146,7 +148,7 @@ namespace primesieve
   /// threads.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t parallel_count_primes(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t parallel_count_primes(uint64_t start, uint64_t stop);
 
   /// Count the twin primes within the interval [start, stop] in
   /// parallel. By default all CPU cores are used, use
@@ -154,7 +156,7 @@ namespace primesieve
   /// threads.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t parallel_count_twins(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t parallel_count_twins(uint64_t start, uint64_t stop);
 
   /// Count the prime triplets within the interval [start, stop] in
   /// parallel. By default all CPU cores are used, use
@@ -162,7 +164,7 @@ namespace primesieve
   /// threads.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t parallel_count_triplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t parallel_count_triplets(uint64_t start, uint64_t stop);
 
   /// Count the prime quadruplets within the interval [start, stop] in
   /// parallel. By default all CPU cores are used, use
@@ -170,7 +172,7 @@ namespace primesieve
   /// threads.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t parallel_count_quadruplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t parallel_count_quadruplets(uint64_t start, uint64_t stop);
 
   /// Count the prime quintuplets within the interval [start, stop] in
   /// parallel. By default all CPU cores are used, use
@@ -178,7 +180,7 @@ namespace primesieve
   /// threads.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t parallel_count_quintuplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t parallel_count_quintuplets(uint64_t start, uint64_t stop);
 
   /// Count the prime sextuplets within the interval [start, stop] in
   /// parallel. By default all CPU cores are used, use
@@ -186,68 +188,68 @@ namespace primesieve
   /// threads.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  uint64_t parallel_count_sextuplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT uint64_t parallel_count_sextuplets(uint64_t start, uint64_t stop);
 
   /// Print the primes within the interval [start, stop]
   /// to the standard output.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  void print_primes(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT void print_primes(uint64_t start, uint64_t stop);
 
   /// Print the twin primes within the interval [start, stop]
   /// to the standard output.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  void print_twins(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT void print_twins(uint64_t start, uint64_t stop);
 
   /// Print the prime triplets within the interval [start, stop]
   /// to the standard output.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  void print_triplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT void print_triplets(uint64_t start, uint64_t stop);
 
   /// Print the prime quadruplets within the interval [start, stop]
   /// to the standard output.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  void print_quadruplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT void print_quadruplets(uint64_t start, uint64_t stop);
 
   /// Print the prime quintuplets within the interval [start, stop]
   /// to the standard output.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  void print_quintuplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT void print_quintuplets(uint64_t start, uint64_t stop);
 
   /// Print the prime sextuplets within the interval [start, stop]
   /// to the standard output.
   /// @pre stop <= 2^64 - 2^32 * 10.
   ///
-  void print_sextuplets(uint64_t start, uint64_t stop);
+  PRIMESIEVE_EXPORT void print_sextuplets(uint64_t start, uint64_t stop);
 
   /// Call back the primes within the interval [start, stop].
   /// @param callback  A callback function.
   /// @pre   stop <= 2^64 - 2^32 * 10.
   ///
-  void callback_primes(uint64_t start, uint64_t stop, void (*callback)(uint64_t prime));
+  PRIMESIEVE_EXPORT void callback_primes(uint64_t start, uint64_t stop, void (*callback)(uint64_t prime));
 
   /// Call back the primes within the interval [start, stop].
   /// @param callback  An object derived from primesieve::Callback<uint64_t>.
   /// @pre   stop <= 2^64 - 2^32 * 10.
   ///
-  void callback_primes(uint64_t start, uint64_t stop, primesieve::Callback<uint64_t>* callback);
+  PRIMESIEVE_EXPORT void callback_primes(uint64_t start, uint64_t stop, primesieve::Callback<uint64_t>* callback);
 
   /// Get the current set sieve size in kilobytes.
-  int get_sieve_size();
+  PRIMESIEVE_EXPORT int get_sieve_size();
 
   /// Get the current set number of threads.
   /// @note By default MAX_THREADS (-1) is returned.
   ///
-  int get_num_threads();
+  PRIMESIEVE_EXPORT int get_num_threads();
 
   /// Returns the largest valid stop number for primesieve.
   /// @return (2^64-1) - (2^32-1) * 10.
   ///
-  uint64_t get_max_stop();
+  PRIMESIEVE_EXPORT uint64_t get_max_stop();
 
   /// Set the sieve size in kilobytes.
   /// The best sieving performance is achieved with a sieve size of
@@ -257,7 +259,7 @@ namespace primesieve
   /// @param sieve_size Sieve size in kilobytes.
   /// @pre   sieve_size >= 1 && sieve_size <= 2048.
   ///
-  void set_sieve_size(int sieve_size);
+  PRIMESIEVE_EXPORT void set_sieve_size(int sieve_size);
 
   /// Set the number of threads for use in subsequent
   /// primesieve::parallel_* function calls. Note that this only
@@ -265,17 +267,17 @@ namespace primesieve
   /// @param num_threads  Number of threads for sieving
   ///                     or MAX_THREADS to use all CPU cores.
   ///
-  void set_num_threads(int num_threads);
+  PRIMESIEVE_EXPORT void set_num_threads(int num_threads);
 
   /// Run extensive correctness tests.
   /// The tests last about one minute on a quad core CPU from
   /// 2013 and use up to 1 gigabyte of memory.
   /// @return true if success else false.
   ///
-  bool primesieve_test();
+  PRIMESIEVE_EXPORT bool primesieve_test();
 
   /// Get the primesieve version number, in the form “i.j.k”.
-  std::string primesieve_version();
+  PRIMESIEVE_EXPORT std::string primesieve_version();
 }
 
 #endif

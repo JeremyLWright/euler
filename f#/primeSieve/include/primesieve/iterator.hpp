@@ -15,9 +15,11 @@
 #include <vector>
 #include <cstddef>
 
+#include "primesieveExport.h"
+
 namespace primesieve {
 
-uint64_t get_max_stop();
+PRIMESIEVE_EXPORT uint64_t get_max_stop();
 
 /// primesieve::iterator allows to easily iterate over primes both
 /// forwards and backwards. Generating the first prime has a

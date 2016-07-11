@@ -12,6 +12,8 @@
 #ifndef PARALLELPRIMESIEVE_HPP
 #define PARALLELPRIMESIEVE_HPP
 
+#include "primesieveExport.h"
+
 #include "PrimeSieve.hpp"
 #include <stdint.h>
 
@@ -21,7 +23,7 @@ namespace primesieve {
 /// derived from PrimeSieve so it has the same API.
 /// Please refer to doc/EXAMPLES for more information.
 ///
-class ParallelPrimeSieve : public PrimeSieve
+class PRIMESIEVE_EXPORT ParallelPrimeSieve : public PrimeSieve
 {
 public:
   /// Used for inter-process communication with the

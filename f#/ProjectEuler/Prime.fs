@@ -5,6 +5,10 @@ module Prime =
     open System
     open NUnit.Framework
     open FsUnit
+    open System.Runtime.InteropServices
+
+    [<DllImport("primesieve.dll")>]
+    extern int primesieve_test()
 
     let isPrime number =
         match number with
@@ -23,5 +27,9 @@ module Prime =
     [<Test>]
     let ``first prime is 2`` () =
         Seq.nth 0 primes |> should equal 2
+
+    [<Test>]
+    let ``native prime integration test`` () =
+        primesieve_test() |> should equal 1
 
 
