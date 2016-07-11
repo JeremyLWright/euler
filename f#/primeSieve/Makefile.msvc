@@ -5,7 +5,7 @@
 
 TARGET   = primesieve
 CXX      = cl /nologo
-CXXFLAGS = /W2 /O2 /EHsc
+CXXFLAGS = /W2 /O2 /EHsc /MD
 INCPATH  = /I"include" /I"src\msvc_compat"
 LINK     = link /nologo
 OBJDIR   = obj
