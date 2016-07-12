@@ -9,6 +9,17 @@ public class PrimeSieve
 {
     [DllImport("primesieve.dll")]
     public static extern int primesieve_test();
+
+    [DllImport("primesieve.dll")]
+    public static extern IntPtr primesieve_generate_n_primes(UInt64 n, UInt64 start, int a);
+
+    public static int[] generate(UInt64 n, UInt64 start)
+    {
+        int[] ReturnArray = new int[n];
+        IntPtr d = primesieve_generate_n_primes(n, start, 2);
+        Marshal.Copy(d, ReturnArray, (int)0, (int)n);
+        return ReturnArray;
+    }
 }
 
 
@@ -18,6 +29,7 @@ namespace SimplePrimeWrapper
     {
         static void Main(string[] args)
         {
+            var h = PrimeSieve.generate(1000000, 0);
             //PRIMESIEVE_EXPORT uint64_t* primesieve_generate_primes(uint64_t start, uint64_t stop, size_t* size);
 
             //ulong h;
