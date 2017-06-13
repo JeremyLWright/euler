@@ -11,6 +11,9 @@ class Steps : En {
         Given("^I sum the multiples of 3 or 5 below (\\d+)$",
                 { upperBound: Int -> result = multiple3Or5(upperBound).toList().sum()})
 
+        Given("^I sum of even-valued terms below (\\d+)$",
+                { upperBound: Int -> throw cucumber.api.PendingException() })
+
         Then("^the result is (\\d+).$",
                 { a: Int -> assertThat(result, `is`(a));})
     }
