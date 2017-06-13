@@ -6,4 +6,4 @@ Feature: Problem 1
 
   Scenario: Multiples of 3 and 5
     Given I sum the multiples of 3 or 5 below 1000
-    Then the sum is 233168.
+    Then the result is 233168.
