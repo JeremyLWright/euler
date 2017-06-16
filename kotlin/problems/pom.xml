@@ -5,9 +5,16 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <artifactId>project-euler</artifactId>
+        <groupId>com.codestrokes</groupId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+
     <groupId>com.codestrokes</groupId>
-    <artifactId>project-euler</artifactId>
+    <artifactId>euler-problems</artifactId>
     <version>0.1.0-SNAPSHOT</version>
+    <name>Euler::Problems</name>
 
     <properties>
         <kotlin.version>1.1.2-2</kotlin.version>

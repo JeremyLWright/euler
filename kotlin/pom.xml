@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.codestrokes</groupId>
-    <artifactId>project-euler-parent</artifactId>
+    <artifactId>project-euler</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Project Euler in Kotlin</name>
 
     <modules>
-        <module>euler</module>
-    <module>benchmark</module>
+        <module>problems</module>
+        <module>benchmark</module>
   </modules>
 </project>
