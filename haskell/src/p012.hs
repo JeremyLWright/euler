@@ -1,7 +1,7 @@
 import Data.List 
 import Euler.NumberTheory
 
-divisors f = sort $ nub $ concat (primeFactors f ++ map product (tails $ primeFactors f))
+--divisors f = sort $ nub $ concat (primeFactors f ++ map product (tails $ primeFactors f))
 
 triangleNumbers = map sum $ inits [1..]
 

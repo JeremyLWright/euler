@@ -10,10 +10,10 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 library
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -112,10 +112,10 @@ benchmark bench-euler
 -- Begin problems --
 
 executable p001
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -127,10 +127,10 @@ executable p001
 
 
 executable p002
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -142,10 +142,10 @@ executable p002
 
 
 executable p003
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -157,10 +157,10 @@ executable p003
 
 
 executable p004
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -172,10 +172,10 @@ executable p004
 
 
 executable p005
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -187,10 +187,10 @@ executable p005
 
 
 executable p006
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -202,10 +202,10 @@ executable p006
 
 
 executable p007
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -217,10 +217,10 @@ executable p007
 
 
 executable p008
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -232,10 +232,10 @@ executable p008
 
 
 executable p009
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -247,10 +247,10 @@ executable p009
 
 
 executable p010
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -262,10 +262,10 @@ executable p010
 
 
 executable p011
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -277,10 +277,10 @@ executable p011
 
 
 executable p012
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -292,10 +292,10 @@ executable p012
 
 
 executable p013
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -307,10 +307,10 @@ executable p013
 
 
 executable p014
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -322,10 +322,10 @@ executable p014
 
 
 executable p015
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -337,10 +337,10 @@ executable p015
 
 
 executable p016
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -352,10 +352,10 @@ executable p016
 
 
 executable p017
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -367,10 +367,10 @@ executable p017
 
 
 executable p018
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -382,10 +382,10 @@ executable p018
 
 
 executable p019
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -397,10 +397,10 @@ executable p019
 
 
 executable p020
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -412,10 +412,10 @@ executable p020
 
 
 executable p021
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -427,10 +427,10 @@ executable p021
 
 
 executable p022
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -442,10 +442,10 @@ executable p022
 
 
 executable p023
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -457,10 +457,10 @@ executable p023
 
 
 executable p024
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -472,10 +472,10 @@ executable p024
 
 
 executable p025
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -487,10 +487,10 @@ executable p025
 
 
 executable p026
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -502,10 +502,10 @@ executable p026
 
 
 executable p027
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -517,10 +517,10 @@ executable p027
 
 
 executable p028
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -532,10 +532,10 @@ executable p028
 
 
 executable p029
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -547,10 +547,10 @@ executable p029
 
 
 executable p030
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -562,10 +562,10 @@ executable p030
 
 
 executable p031
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -577,10 +577,10 @@ executable p031
 
 
 executable p032
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -592,10 +592,10 @@ executable p032
 
 
 executable p033
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -607,10 +607,10 @@ executable p033
 
 
 executable p034
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -622,10 +622,10 @@ executable p034
 
 
 executable p035
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -637,10 +637,10 @@ executable p035
 
 
 executable p036
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -652,10 +652,10 @@ executable p036
 
 
 executable p037
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -667,10 +667,10 @@ executable p037
 
 
 executable p038
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -682,10 +682,10 @@ executable p038
 
 
 executable p039
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -697,10 +697,10 @@ executable p039
 
 
 executable p040
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -712,10 +712,10 @@ executable p040
 
 
 executable p041
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -726,10 +726,10 @@ executable p041
     default-language:   Haskell2010
 
 executable p042
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -739,10 +739,10 @@ executable p042
     hs-source-dirs:     src
     default-language:   Haskell2010
 executable p043
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -755,10 +755,10 @@ executable p043
 
 
 executable p045
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -768,10 +768,10 @@ executable p045
     hs-source-dirs:     src
     default-language:   Haskell2010
 executable p046
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 
@@ -783,10 +783,10 @@ executable p046
 
 
 executable p096
-    build-depends:      base ==4.6.*,
+    build-depends:      base ==4.9.1.0,
                         containers ==0.5.*,
-                        array ==0.4.*,
-                        time ==1.4.*,
+                        array ==0.5.1.1,
+                        time==1.6.0.1,
                         parallel ==3.2.*,
                         array,
                         primes, 

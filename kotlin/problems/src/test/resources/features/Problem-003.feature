@@ -11,6 +11,6 @@ Feature: Problem 3
     | 13|
     |29 |
 
- Scenario: SLargest prime factor
+ Scenario: Largest prime factor
     Given the composite number 600851475143
     Then the largest prime factor is 6857

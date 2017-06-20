@@ -20,6 +20,7 @@
         <kotlin.version>1.1.2-2</kotlin.version>
         <junit.version>4.12</junit.version>
         <main.class>hello.HelloKt</main.class>
+        <javac.target>1.8</javac.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<kotlin.compiler.incremental>false</kotlin.compiler.incremental> <!-- experimental as of 1.1.2 -->
     </properties>
@@ -66,6 +67,16 @@
         <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
 
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <compilerVersion>${javac.target}</compilerVersion>
+                    <source>${javac.target}</source>
+                    <target>${javac.target}</target>
+                </configuration>
+            </plugin>
             <plugin>
                 <artifactId>kotlin-maven-plugin</artifactId>
                 <groupId>org.jetbrains.kotlin</groupId>

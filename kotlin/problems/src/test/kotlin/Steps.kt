@@ -2,6 +2,7 @@ import cucumber.api.java8.En
 import com.codestrokes.multiple3Or5
 import cucumber.api.DataTable
 import cucumber.api.Delimiter
+import cucumber.api.PendingException
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat
 
@@ -9,6 +10,8 @@ class Steps : En {
     private var result: Int? = null
 
     private var compositeNumber: Int? = null
+
+    val o : () -> Unit = { print("Hello") }
 
     init {
 
@@ -20,6 +23,7 @@ class Steps : En {
 
         Given("^the composite number (\\d+)$",
                 { compositeNumber: Int -> this.compositeNumber = compositeNumber })
+
 
        // Then("^the prime factors are (\\d+(?:, \\d+)*)$", //How can we get a List<Int>
        // Then("^the prime factors are (\\d+), (\\d+), (\\d+), (\\d+)$",

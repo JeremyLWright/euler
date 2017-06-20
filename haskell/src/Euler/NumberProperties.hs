@@ -3,6 +3,7 @@ import Data.List
 import Debug.Trace
 import Data.Bits
 import qualified Data.Set as S
+
 nub' :: (Ord a) => [a] -> [a]
 nub' = go S.empty
   where go _ [] = []
@@ -36,4 +37,8 @@ isPandigitalList ns = sort ( foldl1 (++) convert) == "123456789"
 digs 0 = []
 digs x = digs (x `div` 10) ++ [x `mod` 10]
 
-fromDigits = foldl ((+).(*10)) 0
+fromDigits :: [Integer] -> Integer
+fromDigits = foldl addDigit 0
+   where addDigit num d = 10*num + d
+
+--fromDigits = foldl $ (+).(* 10 ) $ 0::Integer
