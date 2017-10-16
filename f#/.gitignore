@@ -1,8 +1,0 @@
-TestResult.xml
-.vs
-packages
-Debug
-Release
-x64
-*.opendb
-*.db
