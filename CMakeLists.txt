@@ -9,12 +9,11 @@ include_directories(vendor/primesieve-6.3/include)
 add_subdirectory(vendor/primesieve-6.3)
 
 
-add_library(e src/sieve.cpp)
-
 add_executable(001 src/001.cpp)
 add_executable(002 src/002.cpp)
 add_executable(003 src/003.cpp)
+add_executable(004 src/004.cpp)
 
-target_link_libraries(003 e libprimesieve )
+target_link_libraries(003 libprimesieve )
 enable_testing()
 add_test(Problem-001 001)

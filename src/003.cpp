@@ -1,4 +1,3 @@
-#include "sieve.hpp"
 #include <iostream>
 #include "prime_range.hpp"
 #include <vector>

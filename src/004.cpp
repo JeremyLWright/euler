@@ -24,6 +24,5 @@ int main(int argc, const char *argv[])
 
   std::cout << ranges::v3::max(palindromes) << '\n';
 
-  //std::cout << ranges::v3::max(factors) << '\n';
   return 0;
 }
