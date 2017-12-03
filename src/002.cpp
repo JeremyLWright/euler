@@ -2,7 +2,7 @@
 #include <range/v3/all.hpp>
 #include "fib_range.hpp"
 
-int main(int argc, const char *argv[])
+int main(int const argc, char const *argv[])
 {
   using namespace ranges;
   auto is_even = [](size_t n) { return n % 2 == 0; };

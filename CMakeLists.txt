@@ -5,10 +5,16 @@ set(RANGES_CXX_STD 1z)
 set(CMAKE_CXX_FLAGS -std=c++1z)
 
 include_directories(vendor/range-v3/include)
+include_directories(vendor/primesieve-6.3/include)
+add_subdirectory(vendor/primesieve-6.3)
 
 
+add_library(e src/sieve.cpp)
 
 add_executable(001 src/001.cpp)
 add_executable(002 src/002.cpp)
+add_executable(003 src/003.cpp)
+
+target_link_libraries(003 e libprimesieve )
 enable_testing()
 add_test(Problem-001 001)
