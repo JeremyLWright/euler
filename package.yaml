@@ -1,0 +1,260 @@
+name: euler
+version: 0.2.0
+synopsis: Project Euler Problems in Haskell
+license: BSD3
+maintainer: Jeremy Wright <jeremy@quiescent.us>
+github: JeremyLWright/euler
+category: Development
+
+ghc-options: -Wall -O2
+default-extensions: ScopedTypeVariables
+
+dependencies:
+  - base 
+  - containers 
+  - array 
+  - time
+  - parallel
+  - array
+  - primes
+  - digits
+  - split
+
+library:
+  source-dirs: src    
+
+_test_dependencies: &_test_dependencies
+  - hspec
+  - HUnit
+  - QuickCheck
+  - test-framework
+  - test-framework-hunit
+  - test-framework-quickcheck2
+  - euler
+
+
+tests:
+  spec:
+    main: quick/primes.hs 
+    source-dirs:
+      - testsuite
+    dependencies:
+      *_test_dependencies
+  test-problems:
+    main: adhoc/test-problems.hs
+    source-dirs:
+      - testsuite
+    dependencies:
+      *_test_dependencies
+  test-euler:
+    main: adhoc/test-euler.hs
+    source-dirs:
+      - testsuite
+    dependencies:
+      *_test_dependencies
+
+
+benchmarks:
+
+  bench-problems:
+    main: problems.hs
+    source-dirs:
+      - bench
+    dependencies:
+      - criterion
+      - euler
+
+  bench-prime:
+    main: prime.hs
+    source-dirs:
+      - bench
+    dependencies:
+      - criterion
+      - euler
+
+executables:
+  p001: &p001
+    main:   p001.hs
+    source-dirs: driver 
+    dependencies:
+        euler
+  p002:
+    <<: *p001
+    main: p002.hs
+
+  p003:
+    <<: *p001
+    main: p003.hs
+
+  p004:
+    <<: *p001
+    main: p004.hs
+
+  p005:
+    <<: *p001
+    main: p005.hs
+
+  p006:
+    <<: *p001
+    main: p006.hs
+
+  p007:
+    <<: *p001
+    main: p007.hs
+
+  p008:
+    <<: *p001
+    main: p008.hs
+
+  p009:
+    <<: *p001
+    main: p009.hs
+
+  p010:
+    <<: *p001
+    main: p010.hs
+
+  p011:
+    <<: *p001
+    main: p011.hs
+
+  p012:
+    <<: *p001
+    main: p012.hs
+
+  p013:
+    <<: *p001
+    main: p013.hs
+
+  p014:
+    <<: *p001
+    main: p014.hs
+
+  p015:
+    <<: *p001
+    main: p015.hs
+
+  p016:
+    <<: *p001
+    main: p016.hs
+
+  p017:
+    <<: *p001
+    main: p017.hs
+
+  p018:
+    <<: *p001
+    main: p018.hs
+
+  p019:
+    <<: *p001
+    main: p019.hs
+
+  p020:
+    <<: *p001
+    main: p020.hs
+
+  p021:
+    <<: *p001
+    main: p021.hs
+
+  p022:
+    <<: *p001
+    main: p022.hs
+
+  p023:
+    <<: *p001
+    main: p023.hs
+
+  p024:
+    <<: *p001
+    main: p024.hs
+
+  p025:
+    <<: *p001
+    main: p025.hs
+
+  p026:
+    <<: *p001
+    main: p026.hs
+
+  p027:
+    <<: *p001
+    main: p027.hs
+
+  p028:
+    <<: *p001
+    main: p028.hs
+
+  p029:
+    <<: *p001
+    main: p029.hs
+
+  p030:
+    <<: *p001
+    main: p030.hs
+
+  p031:
+    <<: *p001
+    main: p031.hs
+
+  p032:
+    <<: *p001
+    main: p032.hs
+
+  p033:
+    <<: *p001
+    main: p033.hs
+
+  p034:
+    <<: *p001
+    main: p034.hs
+
+  p035:
+    <<: *p001
+    main: p035.hs
+
+  p036:
+    <<: *p001
+    main: p036.hs
+
+  p037:
+    <<: *p001
+    main: p037.hs
+
+  p038:
+    <<: *p001
+    main: p038.hs
+
+  p039:
+    <<: *p001
+    main: p039.hs
+
+  p040:
+    <<: *p001
+    main: p040.hs
+
+  p041:
+    <<: *p001
+    main: p041.hs
+
+  p042:
+    <<: *p001
+    main: p042.hs
+
+  p043:
+    <<: *p001
+    main: p043.hs
+
+  p045:
+    <<: *p001
+    main: p045.hs
+
+  p046:
+    <<: *p001
+    main: p046.hs
+
+  p096:
+    <<: *p001
+    main: p096.hs
+
